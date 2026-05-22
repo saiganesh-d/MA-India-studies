@@ -1,0 +1,3308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0K2JZFDWZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K0K2JZFDWZ');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j
+  ,f);
+  })(window,document,'script','dataLayer','GTM-N94ZC5LW');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>M.A. in India Studies – O.P. Jindal Global University</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ================================================
+       RESET & BASE
+    ================================================ */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+      background: linear-gradient(93deg, #ffffff 3%, #fffcde 100%);
+    }
+
+    .section-global {
+      width: 100%;
+      max-width: 100% !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    /* ================================================
+       HEADER
+    ================================================ */
+    .header-section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: transparent;
+      border-bottom: none;
+      padding: 24px 0 10px;
+      z-index: 100;
+    }
+
+    .header-logo-img {
+      height: 88px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .header-logo-divider {
+      width: 1px;
+      height: 68px;
+      background: #ddd;
+      margin: 0 22px;
+      flex-shrink: 0;
+    }
+
+    .logo-flex-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .logo-flex-container {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .header-section {
+        position: relative;
+        background: #fff;
+        padding: 14px 0;
+      }
+
+      .header-logo-img {
+        height: 60px;
+      }
+
+      .header-logo-divider {
+        height: 48px;
+        margin: 0 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header-logo-img {
+        height: 48px;
+      }
+
+      .header-logo-divider {
+        margin: 0 10px;
+        height: 40px;
+      }
+    }
+
+    /* ================================================
+       HERO SECTION
+    ================================================ */
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(93deg, #ffffff 3%, #fffcde 100%);
+      padding-top: 110px;
+      /* Space for the floating absolute header */
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        padding-top: 0;
+      }
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 80%;
+      /* Height adjusted to make the monuments clearly visible and low */
+      background: url('Assets/Assets/Hero section/hero image.png') no-repeat;
+      background-size: cover;
+      background-position: 30% bottom;
+      /* Perfectly centered horizontally to align Taj Mahal and temple gopuram */
+      opacity: 0.85;
+      /* Significantly increased opacity for clear monument visibility */
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.15) 30%, transparent 60%);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 3;
+      /* Elevated above the ::after overlay (z-index 2) to maintain full interactability */
+      display: flex;
+      align-items: stretch;
+      min-height: 580px;
+      padding: 40px 60px 48px;
+      gap: 28px;
+    }
+
+    .hero-text-col {
+      flex: 0 0 55%;
+      max-width: 55%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-form-col {
+      flex: 0 0 40%;
+      max-width: 40%;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Hero text */
+    .hero-pretitle {
+      font-family: 'Merriweather', serif;
+      font-size: clamp(16px, 1.8vw, 22px);
+      font-weight: 400;
+      font-style: normal;
+      color: #1e1e1e;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .hero-ma {
+      font-size: clamp(48px, 6.2vw, 82px);
+      font-weight: 900;
+      color: #000000;
+      line-height: 0.95;
+      margin-bottom: 0px;
+      letter-spacing: -1.5px;
+    }
+
+    .hero-title {
+      font-size: clamp(56px, 7.5vw, 98px);
+      font-weight: 900;
+      line-height: 0.95;
+      margin-bottom: 24px;
+      letter-spacing: -2px;
+    }
+
+    .text-navy {
+      color: #0b1354;
+    }
+
+    .text-gradient-studies {
+      background: linear-gradient(90deg, #6A0DAD 0%, #00B4D8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .text-gradient {
+      background: linear-gradient(90deg, #0d1b73 0%, #6a0dad 50%, #00c2cb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-tagline {
+      font-size: clamp(13px, 1.4vw, 17px);
+      font-weight: 800;
+      color: #1a1a1a;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+
+    .wavy-underline {
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: #6a0dad;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 2px;
+    }
+
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(90deg, #0b1354 0%, #581c87 50%, #0093b7 100%);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 16px 48px;
+      border-radius: 40px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+      text-decoration: none;
+      align-self: flex-start;
+      box-shadow: 0 8px 24px rgba(11, 19, 84, 0.3);
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0, 180, 200, 0.4);
+      color: #ffffff;
+      background: linear-gradient(90deg, #0b1354 0%, #6b21a8 50%, #00b4d8 100%);
+    }
+
+    /* Enquire Hero Card */
+    .enquire-hero-card {
+      background: linear-gradient(135deg, #0b1354 0%, #581c87 60%, #0093b7 100%);
+      border-radius: 24px;
+      padding: 36px 32px 30px;
+      box-shadow: 0 12px 40px rgba(11, 19, 84, 0.4);
+      width: 100%;
+    }
+
+    .enquire-hero-title {
+      font-size: clamp(20px, 2.2vw, 24px);
+      font-weight: 800;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero-form-input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 13px 16px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      margin-bottom: 16px;
+      outline: none;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .hero-form-input:focus {
+      background: rgba(255, 255, 255, 0.22);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .hero-form-input::placeholder {
+      color: rgba(255, 255, 255, 0.65);
+      font-style: italic;
+    }
+
+    .hero-form-input option {
+      color: #333;
+      background: #fff;
+    }
+
+    .hero-phone-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .hero-phone-prefix {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 13px 16px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      white-space: nowrap;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hero-phone-input {
+      margin-bottom: 0;
+      flex: 1;
+    }
+
+    .hero-consent {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .hero-consent input[type="checkbox"] {
+      margin-top: 3px;
+      flex-shrink: 0;
+      accent-color: #ffd700;
+      width: 14px;
+      height: 14px;
+      cursor: pointer;
+    }
+
+    .hero-submit-btn {
+      width: 100%;
+      background: linear-gradient(180deg, #ffe342 0%, #ffd700 100%);
+      color: #0b1354;
+      border: none;
+      border-radius: 8px;
+      padding: 15px;
+      font-weight: 800;
+      font-size: 16px;
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: all 0.2s;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    }
+
+    .hero-submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+      background: linear-gradient(180deg, #ffeb60 0%, #ffe033 100%);
+    }
+
+    /* Info Bar */
+    .hero-info-bar {
+      position: relative;
+      z-index: 3;
+      display: flex;
+      background: linear-gradient(90deg, #0d1b73 0%, #6a0dad 50%, #00c2cb 100%);
+      margin-bottom: 45px;
+      /* Adds space below the info bar before next section */
+    }
+
+    .info-tile {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 10px;
+      /* Increased vertical padding to add height/spaciousness */
+      color: #fff;
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .info-tile:last-child {
+      border-right: none;
+    }
+
+    .info-tile-label {
+      font-size: 11px;
+      font-weight: 500;
+      opacity: 0.85;
+      letter-spacing: 0.3px;
+    }
+
+    .info-tile-value {
+      font-size: 15px;
+      font-weight: 800;
+      margin-top: 3px;
+      letter-spacing: 0.2px;
+    }
+
+    /* ================================================
+       WHO SHOULD APPLY
+    ================================================ */
+    .who-section {
+      padding: 70px 0 30px;
+      background: linear-gradient(93deg, #fff 3%, #fffcde 100%);
+    }
+
+    .who-title {
+      font-size: clamp(28px, 4vw, 46px);
+      font-weight: 800;
+      color: #0d1b73;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .who-card {
+      background: #0D1B73;
+      border-radius: 20px;
+      padding: 26px 14px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+      color: #fff;
+    }
+
+    .who-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 32px rgba(106, 13, 173, 0.2);
+    }
+
+    .who-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .who-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    .who-card h6 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #A8B4FF;
+      margin-bottom: 0;
+      line-height: 1.4;
+    }
+
+    /* ================================================
+       ABOUT THE PROGRAMME
+    ================================================ */
+    .about-programme-section {
+      padding: 70px 0 80px;
+      background: #FFFDF0;
+      /* Solid soft premium ivory background */
+    }
+
+    .about-prog-title {
+      font-size: clamp(32px, 4.2vw, 44px);
+      font-weight: 800;
+      color: #0d1b73;
+      line-height: 1.25;
+      margin-bottom: 24px;
+    }
+
+    .about-prog-title em {
+      color: #6a0dad;
+      font-style: italic;
+      font-weight: 800;
+    }
+
+    .about-prog-body {
+      font-size: 15px;
+      color: #4b5563;
+      /* Clean professional grey */
+      line-height: 1.85;
+      margin-bottom: 24px;
+      font-weight: 500;
+      /* Solid and beautiful typography */
+    }
+
+    .about-prog-body strong {
+      color: #0d1b73;
+      /* Rich dark navy blue for high-contrast branding */
+      font-weight: 700;
+    }
+
+    .about-prog-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      /* Modern elegant spacing gap */
+    }
+
+    .about-images-left-col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .about-prog-images .img-campus {
+      width: 100%;
+      height: 376px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .about-prog-images .img-campus:hover {
+      transform: translateY(-4px);
+    }
+
+    .about-prog-images .img-collage {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .about-prog-images .img-collage:hover {
+      transform: translateY(-4px);
+    }
+
+    .about-prog-cta-tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #1A0D6B 0%, #00B4D8 100%);
+      padding: 22px 24px;
+      border-radius: 20px;
+      color: #ffffff;
+      text-decoration: none;
+      height: 124px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 20px rgba(11, 19, 84, 0.25);
+      position: relative;
+    }
+
+    .about-prog-cta-tile:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 180, 200, 0.4);
+      color: #ffffff;
+    }
+
+    .cta-tile-text {
+      font-size: clamp(16px, 1.5vw, 18px);
+      font-weight: 700;
+      line-height: 1.35;
+      color: #ffffff;
+    }
+
+    .cta-tile-arrow {
+      align-self: flex-end;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      color: #ffffff;
+      margin-top: auto;
+    }
+
+    /* ================================================
+       PROGRAMME HIGHLIGHTS
+    ================================================ */
+    .features-section {
+      background: url('Assets/Assets/Programme Highlights/bg picture.png') center center / cover no-repeat;
+      padding: 80px 0 90px;
+      /* Increased vertical padding to make height taller, giving more space for cards */
+      border-radius: 36px 36px 0 0;
+      overflow: hidden;
+      position: relative;
+      margin-top: 0;
+      /* Removed negative margin overlap to keep the space below the info bar */
+      z-index: 2;
+      border-top: 5px solid #FFD700;
+      /* Added gold border to next section to frame it elegantly */
+    }
+
+    .features-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg,
+          rgba(48, 0, 110, 0.50) 0%,
+          rgba(140, 0, 170, 0.42) 30%,
+          rgba(80, 0, 160, 0.38) 55%,
+          rgba(0, 180, 200, 0.42) 80%,
+          rgba(0, 140, 180, 0.50) 100%);
+    }
+
+    .features-section>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title1 {
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 800;
+      color: #fff;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+      letter-spacing: 0.5px;
+      margin-bottom: 32px !important;
+    }
+
+    .slider-container {
+      position: relative;
+    }
+
+    .slider-wrapper {
+      overflow: hidden;
+      margin: 0 48px;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.4s ease;
+    }
+
+    .slider-item {
+      flex: 0 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .feature-card {
+      position: relative;
+      border-radius: 22px;
+      overflow: hidden;
+      flex: 1;
+      /* Stretch to occupy full height of slider track */
+      cursor: pointer;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      /* Clean border to maintain card boundaries */
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      /* Softer premium shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-img {
+      width: 105.5% !important;
+      /* Slightly wider to push and crop out the built-in Figma shadow/whitespace on the right */
+      max-width: none !important;
+      /* Override default bootstrap max-width: 100% constraint */
+      aspect-ratio: 1.35 / 1;
+      object-fit: cover;
+      object-position: left top;
+      /* Pin alignment to top-left to preserve perfect left-edge and top-edge curves */
+      display: block;
+    }
+
+    .card-overlay {
+      width: 100%;
+      flex: 1;
+      /* Fill the remaining card height dynamically */
+      background: #fff;
+      padding: 14px 18px 18px;
+      /* Tighter padding to pull text and picture closer together */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #0d1b73;
+      line-height: 1.3;
+    }
+
+    .card-text {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .slider-btn {
+      position: absolute;
+      top: 42%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 50%;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 10;
+      color: #0d1b73;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      transition: background 0.2s, transform 0.2s;
+      font-weight: 700;
+    }
+
+    .left-btn {
+      left: 4px;
+    }
+
+    .right-btn {
+      right: 4px;
+    }
+
+    .slider-btn:hover {
+      background: #fff;
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    /* ================================================
+       RECOGNITIONS
+    ================================================ */
+    .recognitions-section {
+      position: relative;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .recognitions-header {
+      background: #ffffff;
+      /* Reduced bottom padding so bg image starts immediately after header */
+      padding: 50px 20px 40px;
+      text-align: center;
+    }
+
+    .recognitions-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: #0d1b73;
+      margin: 0;
+    }
+
+    .recognitions-inner {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding: 0 0px;
+    }
+
+    .recognitions-badges {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1700px;
+      margin: 0 auto;
+    }
+
+    .recognitions-body {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 780px;
+      background: url('Assets/Assets/Recognitions/bg picture.png') bottom center/cover no-repeat;
+      overflow: hidden;
+    }
+
+    .recognitions-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(13, 27, 115, 0.6);
+      opacity: 0;
+    }
+
+    .rec-badge {
+      flex: 0 0 18%;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      background: linear-gradient(180deg, #6A0DAD 0%, #0d1b73 100%);
+      border-radius: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      border: 3px solid #fff !important;
+    }
+
+    .rec-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .rec-badge-large {
+      flex: 0 0 18%;
+    }
+
+    .rec-badge-center {
+      flex: 0 0 22%;
+      padding: 6px;
+      transform: scale(1.1);
+      margin: 0;
+      z-index: 10;
+    }
+
+    .rec-badge-center~.rec-badge-large {
+      flex: 0 0 18%;
+    }
+
+    .rec-badge-center~.rec-badge {
+      flex: 0 0 18%;
+    }
+
+    /* When inside mobile carousel */
+    .owl-carousel .rec-badge,
+    .owl-carousel .rec-badge-large,
+    .owl-carousel .rec-badge-center {
+      flex: none !important;
+      max-width: 90% !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      transform: none !important;
+      padding: 10px !important;
+    }
+
+    /* ================================================
+       FACULTY
+    ================================================ */
+    .faculty-section {
+      background: linear-gradient(93deg, #ffffff 3%, #fffcde 100%);
+      padding: 70px 0;
+    }
+
+    .faculty-main-title {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800;
+      color: #0d1b73;
+      margin-bottom: 10px;
+    }
+
+    .faculty-subtitle {
+      font-size: 15px;
+      color: #444;
+      max-width: 680px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    .faculty-carousel-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .faculty-grid-wrapper {
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .faculty-grid {
+      display: flex;
+      gap: 32px;
+      transition: transform 0.4s ease;
+    }
+
+    .faculty-card {
+      flex: 0 0 calc(25% - 24px);
+      min-width: 0;
+      text-align: center;
+    }
+
+    .faculty-image {
+      width: 160px;
+      height: 160px;
+      border-radius: 24px;
+      overflow: hidden;
+      margin: 0 auto 14px;
+      border: 3px solid #fff;
+      background: #6a0dad;
+      box-shadow: inset 4px 6px 4px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(106, 13, 173, 0.2);
+      position: relative;
+    }
+
+    .faculty-image::after {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      border: 2px dashed rgba(255, 255, 255, 0.6);
+      border-radius: 18px;
+      pointer-events: none;
+    }
+
+    .faculty-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .faculty-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #6a0dad;
+      margin-bottom: 5px;
+      line-height: 1.3;
+    }
+
+    .faculty-title-text {
+      font-size: 11px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .faculty-nav-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 2px solid #6a0dad;
+      background: transparent;
+      color: #6a0dad;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+
+    .faculty-nav-btn:hover {
+      background: #6a0dad;
+      color: #fff;
+    }
+
+    /* ================================================
+       CASE STUDIES
+    ================================================ */
+    .case-studies-section {
+      padding: 70px 0;
+      background: #fafafa;
+    }
+
+    .case-studies-title {
+      font-size: clamp(24px, 4vw, 38px);
+      font-weight: 800;
+      color: #0d1b73;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    /* ================================================
+       CASE STUDIES
+    ================================================ */
+    .case-studies-section {
+      padding: 80px 0;
+      background: #FFFDF0;
+      /* Solid soft premium ivory background */
+    }
+
+    .case-studies-section .container {
+      max-width: 1200px;
+      /* Constrain max-width to match Figma compact grid */
+    }
+
+    .case-studies-title {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+      color: #0d1b73;
+      text-align: center;
+      margin-bottom: 16px;
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .case-studies-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 4px;
+      background: #0d1b73;
+      /* Solid navy blue underline */
+      border-radius: 2px;
+    }
+
+    .case-sub {
+      text-align: center;
+      font-size: 15px;
+      color: #4b5563;
+      max-width: 640px;
+      margin: 0 auto 50px;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .case-card {
+      background: #fff;
+      border-radius: 24px;
+      /* Premium smooth corners */
+      padding: 20px;
+      /* Soft padding surrounding elements */
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+      /* Increased robust box shadow */
+      display: flex;
+      flex-direction: row-reverse;
+      /* Image on right, text on left as in Figma */
+      gap: 24px;
+      /* Space between image and text content */
+      height: 100%;
+      min-height: 240px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .case-card:hover {
+      transform: translateY(-6px);
+      /* High-end micro-interaction hover */
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.16);
+      /* Dynamic deeper shadow */
+    }
+
+    .case-card-img {
+      flex: 0 0 38%;
+      max-width: 38%;
+      aspect-ratio: 3 / 4;
+      /* Enforce a beautiful tall vertical portrait format as in Figma */
+      border-radius: 18px;
+      /* Elegant rounded image frame */
+      overflow: hidden;
+    }
+
+    .case-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 18px;
+    }
+
+    .case-body {
+      flex: 1;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .case-card-title {
+      font-size: clamp(16px, 1.8vw, 19px);
+      font-weight: 800;
+      /* Extra bold text */
+      color: #0d1b73;
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+
+    .case-excerpt {
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.65;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .btn-read {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #00B4D8;
+      /* Vibrant cyan/teal button color */
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 40px;
+      /* Premium pill shape */
+      width: fit-content;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 180, 216, 0.2);
+    }
+
+    .btn-read:hover {
+      background: #0077B6;
+      /* Deep blue-cyan on hover */
+      color: #ffffff;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(0, 180, 216, 0.4);
+    }
+
+    /* Helper utility classes for custom heading colors */
+    .text-purple {
+      color: #6a0dad !important;
+    }
+
+    .text-cyan {
+      color: #00b4d8 !important;
+    }
+
+    /* ================================================
+       ELIGIBILITY TABS
+    ================================================ */
+    .eligibility-section {
+      position: relative;
+      padding: 80px 0;
+      overflow: hidden;
+      background: #0d1b73;
+    }
+
+    .elig-bg {
+      position: absolute !important;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 0 !important;
+      transition: background-image 0.5s ease-in-out;
+    }
+
+    .bg-eligibility .elig-bg {
+      background-image: url('Assets/Assets/eligibility/bg picture (14).png');
+    }
+
+    .bg-fees .elig-bg {
+      background-image: url('Assets/Assets/fees & financing/bg picture (15).png');
+    }
+
+    .bg-payment .elig-bg {
+      background-image: url('Assets/Assets/flexible payment/bg picture (16).png');
+    }
+
+    .elig-overlay {
+      position: absolute !important;
+      inset: 0;
+      z-index: 1 !important;
+      background: linear-gradient(135deg, rgba(13, 27, 115, 0.82) 0%, rgba(106, 13, 173, 0.78) 50%, rgba(0, 194, 203, 0.72) 100%);
+    }
+
+    .eligibility-section>* {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Bootstrap nav-tabs override */
+    .elig-tabs {
+      border-bottom: none !important;
+      border-radius: 100px;
+      padding: 6px !important;
+      border: 1px solid rgba(255, 255, 255, 0.4) !important;
+      background: linear-gradient(90deg, #00C2CB 0%, #6A0DAD 50%, #0D1B73 100%) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display: flex !important;
+      width: max-content;
+      max-width: 100%;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-bottom: 50px !important;
+      padding-left: 6px !important;
+      padding-right: 6px !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .elig-tabs .nav-item {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .elig-tabs .nav-link {
+      color: rgba(255, 255, 255, 0.85) !important;
+      font-weight: 600;
+      font-size: 14px;
+      border-radius: 100px !important;
+      border: none !important;
+      padding: 12px 32px !important;
+      background: transparent !important;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .elig-tabs .nav-link:hover {
+      color: #ffffff !important;
+    }
+
+    .elig-tabs .nav-link.active {
+      background: #ffffff !important;
+      color: #0d1b73 !important;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .elig-tab-inner {
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      box-shadow: none !important;
+    }
+
+    .elig-section-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #ffffff !important;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .elig-section-title.sec-2 {
+      margin-top: 36px;
+    }
+
+    .elig-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 24px;
+    }
+
+    .elig-list li {
+      display: flex;
+      gap: 12px;
+      color: #ffffff !important;
+      font-size: 15px;
+      line-height: 1.85;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .elig-list li::before {
+      content: '➤';
+      color: #ffffff !important;
+      font-size: 15px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .nested-gold-list {
+      list-style: none;
+      padding-left: 28px;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .nested-gold-list li {
+      display: flex;
+      gap: 8px;
+      color: #FFD700 !important;
+      font-size: 14.5px;
+      line-height: 1.8;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .nested-gold-list li::before {
+      content: none !important;
+    }
+
+    .fee-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      overflow: hidden;
+      margin-top: 28px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .fee-table th {
+      background: rgba(13, 27, 115, 0.4);
+      color: #FFD700 !important;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 16px 20px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .fee-table th:last-child {
+      border-right: none;
+    }
+
+    .fee-table td {
+      color: #ffffff !important;
+      font-size: 14.5px;
+      font-weight: 500;
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .fee-table td:last-child {
+      border-right: none;
+    }
+
+    .fee-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .fee-table tr:nth-child(even) td {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    @media (max-width: 767.98px) {
+      .elig-tabs {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        border-radius: 20px !important;
+        padding: 10px !important;
+        gap: 8px !important;
+        background: linear-gradient(180deg, #00C2CB 0%, #6A0DAD 50%, #0D1B73 100%) !important;
+      }
+
+      .elig-tabs .nav-link {
+        width: 100% !important;
+        padding: 10px 20px !important;
+        border-radius: 12px !important;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .elig-tab-inner {
+        padding: 30px 24px !important;
+      }
+    }
+
+    /* ================================================
+       TESTIMONIALS / STUDENT COMMUNITY
+    ================================================ */
+    .testimonials-section {
+      padding: 60px 0;
+      background: linear-gradient(93deg, #fff 3%, #fffcde 100%);
+    }
+
+    .sc-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .sc-left-col {
+      flex: 0 0 300px;
+      width: 300px;
+      padding-top: 10px;
+    }
+
+    .test-main-title {
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 900;
+      color: #0b1354;
+      line-height: 1.1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      letter-spacing: -1px;
+    }
+
+    .test-main-title span {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0;
+      white-space: nowrap;
+    }
+
+    .test-subtitle {
+      font-family: 'Merriweather', serif;
+      font-style: italic;
+      font-size: clamp(14px, 1.4vw, 17px);
+      color: #0b1354;
+      line-height: 1.5;
+      margin-top: 24px;
+      font-weight: 400;
+    }
+
+    .sc-right-col {
+      flex: 1;
+      min-width: 0;
+      position: relative;
+    }
+
+    .sc-slider-wrap {
+      overflow: hidden;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .test-grid {
+      display: flex;
+      gap: 20px;
+      transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .test-card {
+      position: relative;
+      flex: 0 0 360px;
+      width: 360px;
+      height: 530px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 24px 20px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      overflow: hidden;
+      box-sizing: border-box;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .test-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.08);
+    }
+
+    .test-card.featured {
+      border: 2px solid #00c2cb;
+      box-shadow: 0 20px 48px rgba(0, 194, 203, 0.12);
+    }
+
+    .test-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #00C2CB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px auto;
+      box-shadow: 0 6px 16px rgba(0, 194, 203, 0.2);
+      flex-shrink: 0;
+    }
+
+    .avatar-svg {
+      width: 30px;
+      height: 30px;
+      color: #ffffff;
+      stroke-width: 1.5;
+    }
+
+    .test-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0b1354;
+      text-align: center;
+      margin-bottom: 4px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .test-role {
+      font-size: 12px;
+      font-weight: 600;
+      color: #00C2CB;
+      text-align: center;
+      margin-bottom: 12px;
+      font-style: italic;
+      line-height: 1.4;
+      font-family: 'Montserrat', sans-serif;
+      min-height: auto;
+    }
+
+    .test-text {
+      font-size: 11px;
+      color: #444444;
+      line-height: 1.45;
+      font-weight: 500;
+      text-align: left;
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      flex-grow: 1;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .test-text::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .test-text::-webkit-scrollbar-thumb {
+      background: rgba(0, 194, 203, 0.2);
+      border-radius: 4px;
+    }
+
+    .sc-nav-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 1199.98px) {
+      .sc-layout {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .sc-left-col {
+        width: 100%;
+        flex: none;
+        padding-top: 0;
+      }
+
+      .test-main-title {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .test-main-title span {
+        padding-bottom: 0;
+      }
+
+      .test-subtitle {
+        margin-top: 12px;
+      }
+
+      .test-card {
+        flex: 0 0 310px;
+        width: 310px;
+        height: 500px;
+        padding: 20px 16px;
+      }
+
+      .test-name {
+        font-size: 17px;
+      }
+
+      .test-role {
+        font-size: 11.5px;
+        margin-bottom: 12px;
+        min-height: auto;
+      }
+
+      .test-text {
+        font-size: 10.5px;
+        line-height: 1.4;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .test-main-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      .test-card {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 480px;
+        padding: 24px 20px;
+      }
+
+      .test-avatar {
+        width: 68px;
+        height: 68px;
+      }
+
+      .avatar-svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+
+    /* ================================================
+       VIDEO SECTION
+    ================================================ */
+    .video-section {
+      padding: 50px 0;
+    }
+
+    .video-box {
+      position: relative;
+      border-radius: 40px;
+      overflow: hidden;
+      display: block;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .video-bg {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 40px;
+    }
+
+    .video-border {
+      position: absolute;
+      inset: 12px;
+      border: 3px dashed rgba(255, 255, 255, 0.7);
+      border-radius: 32px;
+      pointer-events: none;
+    }
+
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      width: 76px;
+      height: 76px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: #6a0dad;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+
+    .video-box:hover .play-btn {
+      transform: translate(-50%, -60%) scale(1.1);
+    }
+
+    .video-text {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.96);
+      color: #0d1b73;
+      padding: 10px 28px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      white-space: nowrap;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ================================================
+       JII (ABOUT)
+     ================================================ */
+    .jii-section {
+      position: relative;
+      width: 100%;
+      background: url('Assets/Assets/Jindal India Institute/bg frame (3).png') center/cover no-repeat;
+      padding: 60px 0 !important;
+      overflow: hidden;
+    }
+
+    .jii-overlay-col {
+      position: relative;
+      background: linear-gradient(135deg, rgba(13, 27, 115, 0.98) 0%, rgba(106, 13, 173, 0.96) 55%, rgba(11, 19, 84, 0.98) 100%);
+      padding: 80px 45px !important;
+      border-radius: 28px;
+      z-index: 2;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .jii-title {
+      font-size: clamp(32px, 4.5vw, 44px);
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 24px;
+      line-height: 1.15;
+      letter-spacing: -1px;
+    }
+
+    .jii-body {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.92);
+      line-height: 1.6;
+      font-weight: 500;
+    }
+
+    .jii-body p+p {
+      margin-top: 14px;
+    }
+
+    .jii-body strong,
+    .jii-body b {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+      .jii-section {
+        padding: 40px 0 !important;
+      }
+
+      .jii-overlay-col {
+        padding: 50px 24px !important;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        margin: 0 10px;
+      }
+    }
+
+    /* ================================================
+       FAQ
+    ================================================ */
+    .faq-section {
+      padding: 70px 0;
+      background: linear-gradient(180deg, #FFFFF2 0%, #F0F8FF 100%);
+    }
+
+    .faq-main-title {
+      font-size: clamp(24px, 4vw, 40px);
+      font-weight: 800;
+      color: #0d1b73;
+      margin-bottom: 40px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid rgba(13, 27, 115, 0.12) !important;
+      border-radius: 18px !important;
+      margin-bottom: 14px;
+      box-shadow: -2px 3px 6px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .faq-item .accordion-button {
+      background: #fff;
+      color: #6a0dad;
+      font-weight: 600;
+      font-size: 15px;
+      border-radius: 18px !important;
+      padding: 18px 22px;
+      box-shadow: none;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .faq-item .accordion-button:not(.collapsed) {
+      background: #fff;
+      color: #6a0dad;
+      box-shadow: none;
+    }
+
+    .faq-item .accordion-button::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236a0dad'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+
+    .accordion-body {
+      font-size: 13.5px;
+      color: #444;
+      line-height: 1.7;
+      padding: 0 22px 18px;
+    }
+
+    /* ================================================
+       ENQUIRE NOW
+    ================================================ */
+    .enquire-section {
+      padding: 70px 0;
+      background: linear-gradient(93deg, #fff 3%, #fffcde 100%);
+    }
+
+    .enquire-section-title {
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 800;
+      color: #0d1b73;
+      margin-bottom: 40px;
+    }
+
+    .enquire-form-container {
+      background: linear-gradient(135deg, #0d1b73 0%, #6a0dad 50%, #00c2cb 100%);
+      border-radius: 40px;
+      overflow: hidden;
+      max-width: 980px;
+      margin: 0 auto;
+      box-shadow: 0 12px 40px rgba(13, 27, 115, 0.3);
+    }
+
+    .enquire-form-left {
+      padding: 40px 44px;
+    }
+
+    .enquire-form-right {
+      padding: 40px 44px;
+      background: rgba(0, 0, 0, 0.12);
+    }
+
+    .glass-input {
+      background: rgba(255, 255, 255, 0.14) !important;
+      border: none !important;
+      border-radius: 12px !important;
+      color: #fff !important;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px !important;
+      padding: 12px 16px !important;
+      margin-bottom: 12px;
+      width: 100%;
+      outline: none;
+    }
+
+    .glass-input::placeholder {
+      color: rgba(255, 255, 255, 0.6) !important;
+      font-style: italic;
+    }
+
+    .glass-input option {
+      color: #333;
+      background: #fff;
+    }
+
+    .glass-input:focus {
+      background: rgba(255, 255, 255, 0.2) !important;
+    }
+
+    .glass-input-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 0;
+    }
+
+    .glass-input-row .glass-prefix {
+      background: rgba(255, 255, 255, 0.14);
+      border-radius: 12px;
+      padding: 12px 14px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .glass-input-row .glass-input {
+      margin-bottom: 0;
+    }
+
+    .privacy-notice {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+
+    #enq-consent {
+      accent-color: #ffe500;
+    }
+
+    .btn-submit-yellow {
+      background: linear-gradient(90deg, #0d1b73 0%, #6a0dad 55%, #00c2cb 100%);
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      padding: 14px;
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+      transition: all 0.2s;
+      margin-top: 6px;
+    }
+
+    .btn-submit-yellow:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .enquire-info-title {
+      font-size: clamp(20px, 2.5vw, 28px);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.35;
+      margin-bottom: 16px;
+    }
+
+    .enquire-info-sub {
+      font-size: 15px;
+      color: #ffe500;
+      line-height: 1.7;
+    }
+
+    /* ================================================
+       FOOTER
+    ================================================ */
+    footer {
+      background: linear-gradient(90deg, #0d1b73 0%, #6a0dad 50%, #00c2cb 100%);
+      padding: 22px;
+    }
+
+    footer p {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* ================================================
+       RESPONSIVE
+    ================================================ */
+    @media (max-width: 1024px) {
+      .hero-inner {
+        padding: 28px 28px 28px;
+      }
+
+      .hero-text-col {
+        flex: 0 0 52%;
+        max-width: 52%;
+      }
+
+      .hero-form-col {
+        flex: 0 0 46%;
+        max-width: 46%;
+      }
+
+      .faculty-card {
+        flex: 0 0 calc(33.33% - 16px);
+      }
+
+      .test-card {
+        flex: 0 0 calc(50% - 9px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-inner {
+        flex-direction: column;
+        padding: 24px 20px 40px;
+        min-height: auto;
+        text-align: center;
+      }
+
+      .hero-text-col,
+      .hero-form-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .hero-section::before {
+        height: 70%;
+        background-position: 30% bottom;
+        opacity: 0.45;
+      }
+
+      .hero-section::after {
+        background: rgba(255, 255, 255, 0.70);
+      }
+
+      .hero-pretitle {
+        font-size: 14px;
+      }
+
+      .info-tile-label {
+        font-size: 9px;
+      }
+
+      .info-tile-value {
+        font-size: 12px;
+      }
+
+      .info-tile {
+        padding: 18px 6px;
+      }
+
+      /* Increased vertical padding on mobile for spacing */
+
+      .features-section {
+        border-radius: 24px 24px 0 0;
+        padding: 50px 0 54px;
+        margin-top: 0;
+        border-top: 4px solid #FFD700;
+      }
+
+      .slider-wrapper {
+        margin: 0 38px;
+      }
+
+      .slider-item {
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+      }
+
+      .feature-card {
+        height: auto;
+        flex: 1;
+      }
+
+      .card-overlay {
+        padding: 12px 14px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .faculty-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .faculty-grid {
+        gap: 20px;
+      }
+
+      .test-card {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+
+      .sc-layout {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .sc-left-col {
+        width: 100%;
+        padding-top: 0;
+      }
+
+      .test-main-title {
+        font-size: 26px;
+      }
+
+      .case-studies-section .row>div {
+        margin-bottom: 24px;
+      }
+
+      .case-card {
+        flex-direction: column;
+        padding: 16px;
+        min-height: auto;
+        gap: 16px;
+      }
+
+      .case-card-img {
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+        height: 180px;
+        margin-bottom: 0;
+        aspect-ratio: auto;
+      }
+
+      .case-body {
+        padding: 0;
+      }
+
+      .elig-tab-inner {
+        padding: 26px 18px;
+      }
+
+      .jii-section {
+        padding: 50px 20px 40px;
+      }
+
+      .about-prog-images {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .about-images-left-col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .about-prog-images .img-campus {
+        height: 280px;
+      }
+
+      .about-prog-images .img-collage {
+        display: none;
+      }
+
+      .about-prog-cta-tile {
+        height: auto;
+        min-height: 110px;
+      }
+
+      .enquire-form-container {
+        border-radius: 20px;
+      }
+
+      .enquire-form-left,
+      .enquire-form-right {
+        padding: 28px 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .who-section .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .info-tile {
+        flex: 0 0 50%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+    }
+
+    /* ================================================
+       RECOGNITIONS RESPONSIVE
+    ================================================ */
+    @media (max-width: 991px) {
+      .recognitions-badges {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .rec-badge {
+        flex: 0 0 45% !important;
+      }
+
+      .rec-badge-center {
+        flex: 0 0 100% !important;
+        order: -1;
+        margin-bottom: 20px;
+        max-width: 320px;
+      }
+
+      .recognitions-body {
+        min-height: auto;
+        padding: 60px 0;
+      }
+
+      .recognitions-title {
+        font-size: 32px !important;
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      .rec-badge,
+      .rec-badge-center {
+        flex: 0 0 85% !important;
+        max-width: 100% !important;
+      }
+
+      .recognitions-title {
+        font-size: 26px !important;
+      }
+    }
+  </style>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "1243343920376799");
+    fbq("track", "PageView");
+  </script>
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      src="https://www.facebook.com/tr?id=1243343920376799&ev=PageView&noscript=1"
+    />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-N94ZC5LW"
+    height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+  <header class="header-section section-global">
+    <div class="container">
+      <div class="logo-flex-container">
+        <img src="logo.png" class="header-logo-img" alt="O.P. Jindal Global University" />
+        <div class="header-logo-divider d-none d-md-block"></div>
+        <img src="logo2-3.png" class="header-logo-img me-3 me-sm-4" alt="Jindal India Institute" />
+        <!-- <img src="logo-2-2.png" class="header-logo-img" alt="Jindal India Institute Logo" /> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+     HERO SECTION
+══════════════════════════════════════════ -->
+  <section class="hero-section section-global">
+    <div class="container-fluid px-0">
+
+      <div class="hero-inner">
+
+        <!-- Left: Text -->
+        <div class="hero-text-col">
+          <p class="hero-pretitle">Journey Into The Heart Of India With The</p>
+          <p class="hero-ma">M.A. in</p>
+          <h1 class="hero-title"><span class="text-navy">India</span> <span class="text-gradient-studies">Studies</span>
+          </h1>
+          <p class="hero-tagline"><span class="wavy-underline">UNDERSTAND INDIA.</span> ENGAGE THE WORLD.</p>
+          <button type="button"
+            class="npfWidgetButton btn-cta npfWidget-163d3e432dd1cc62ee589e07272304d0">ENROLL NOW
+            &nbsp;&nbsp;&rarr;</button>
+        </div>
+
+        <!-- Right: Enquire Form -->
+        <div class="hero-form-col">
+          <div class="enquire-hero-card">
+            <h3 class="enquire-hero-title">ENQUIRE HERE!</h3>
+            <div class="npf_wgts" data-height="400px" data-w="163d3e432dd1cc62ee589e07272304d0"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Info Bar -->
+      <div class="hero-info-bar">
+        <div class="info-tile">
+          <span class="info-tile-label">Postgraduate</span>
+          <span class="info-tile-value">Degree</span>
+        </div>
+        <div class="info-tile">
+          <span class="info-tile-label">Duration:</span>
+          <span class="info-tile-value">1 Year</span>
+        </div>
+        <div class="info-tile">
+          <span class="info-tile-label">Batch Starts:</span>
+          <span class="info-tile-value">September 2026</span>
+        </div>
+        <div class="info-tile">
+          <span class="info-tile-label">Fully Online</span>
+          <span class="info-tile-value">Programme</span>
+        </div>
+        <div class="info-tile">
+          <span class="info-tile-label">Easy EMI</span>
+          <span class="info-tile-value">Options</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     PROGRAMME HIGHLIGHTS
+══════════════════════════════════════════ -->
+  <section class="features-section section-global">
+    <div class="container">
+      <h2 class="section-title1 text-center mb-5">Programme Highlights</h2>
+      <div class="slider-container">
+        <button class="slider-btn left-btn">&#10094;</button>
+        <div class="slider-wrapper">
+          <div class="slider-track">
+
+            <div class="slider-item">
+              <div class="feature-card">
+                <img src="Assets/Assets/Programme Highlights/image 1.png" alt="Only Online MA in India Studies"
+                  class="card-img">
+                <div class="card-overlay">
+                  <p class="card-text">Pursue the only online Master's degree in India Studies offered by an Indian
+                    university.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="feature-card">
+                <img src="Assets/Assets/Programme Highlights/image 2.png" alt="Interdisciplinary Knowledge"
+                  class="card-img">
+                <div class="card-overlay">
+                  <p class="card-text">Gain broad interdisciplinary knowledge of India's rich history, politics,
+                    economy, religions, philosophies, art and business landscape.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="feature-card">
+                <img src="Assets/Assets/Programme Highlights/image 3.png" alt="World Ranked University"
+                  class="card-img">
+                <div class="card-overlay">
+                  <p class="card-text">Study at JGU, a university ranked No. 1 in the world in the Times Higher
+                    Education Online Learning Rankings 2024.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="feature-card">
+                <img src="Assets/Assets/Programme Highlights/image 4.png" alt="100% Online Flexible" class="card-img">
+                <div class="card-overlay">
+                  <p class="card-text">Learn 100% online through interactive classes that you can join from anywhere,
+                    with a schedule that adapts to your needs.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="feature-card">
+                <img src="Assets/Assets/Programme Highlights/image 5.png" alt="Leading Scholars" class="card-img">
+                <div class="card-overlay">
+                  <p class="card-text">Learn from leading scholars of India Studies drawn from diverse disciplines
+                    across O.P. Jindal Global University.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="feature-card">
+                <img src="Assets/Assets/Programme Highlights/image 6.png" alt="Global Cohort" class="card-img">
+                <div class="card-overlay">
+                  <p class="card-text">Join a cohort of global learners from diverse professional and cultural
+                    backgrounds.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="slider-btn right-btn">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     WHO SHOULD APPLY
+══════════════════════════════════════════ -->
+  <section class="who-section section-global py-5">
+    <div class="container">
+      <h2 class="who-title">Who Should <span class="text-gradient">Apply?</span></h2>
+      <div class="row g-4 justify-content-center mt-2">
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="who-card">
+            <div class="who-icon"><img
+                src="Assets/Assets/who should apply/ICONS/Diplomats, Politicians and Journalists.svg" alt="Diplomats">
+            </div>
+            <h6>Diplomats, Politicians and Journalists</h6>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="who-card">
+            <div class="who-icon"><img
+                src="Assets/Assets/who should apply/ICONS/Traders, Investors and Entrepreneurs.svg" alt="Traders"></div>
+            <h6>Traders, Investors and Entrepreneurs</h6>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="who-card">
+            <div class="who-icon"><img
+                src="Assets/Assets/who should apply/ICONS/Aspirants of Yoga, Meditation and Indian Spirituality.svg"
+                alt="Yoga"></div>
+            <h6>Aspirants of Yoga, Meditation and Indian Spirituality</h6>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="who-card">
+            <div class="who-icon"><img src="Assets/Assets/who should apply/ICONS/Members of the Indian Diaspora.svg"
+                alt="Diaspora"></div>
+            <h6>Members of the Indian Diaspora</h6>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="who-card">
+            <div class="who-icon"><img
+                src="Assets/Assets/who should apply/ICONS/Aspiring Scholars of India and South Asian Studies.svg"
+                alt="Scholars"></div>
+            <h6>Aspiring Scholars of India and South Asian Studies</h6>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="who-card">
+            <div class="who-icon"><img
+                src="Assets/Assets/who should apply/ICONS/Indophiles and Cultural Enthusiasts.svg" alt="Indophiles">
+            </div>
+            <h6>Indophiles and Cultural Enthusiasts</h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     ABOUT THE PROGRAMME
+══════════════════════════════════════════ -->
+  <section class="about-programme-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="about-prog-title">About the <em>Programme</em></h2>
+          <p class="about-prog-body">The online <strong>Master of Arts in India Studies</strong> offered by the
+            <strong>Jindal India Institute (JII)</strong> at <strong>O.P. Jindal Global University (JGU)</strong> gives
+            you a comprehensive understanding of India's complexity and global relevance. Over one year, you will
+            explore India's politics, history, philosophy, economy, civilisation, culture, music, cinema and more
+            &mdash; so you gain both depth and breadth of knowledge.
+          </p>
+          <p class="about-prog-body">Designed for flexibility, the 100% online format allows you to learn from leading
+            faculty while balancing work and personal commitments. Through immersive coursework and real-world
+            engagements, you will develop a well-rounded perspective on India's diversity and its evolving role in the
+            global landscape, preparing you for careers across academia, policy, business, and beyond.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-prog-images">
+            <div class="about-images-left-col">
+              <img class="img-campus" src="Assets/Assets/about the programme/1.png" alt="JGU Campus" />
+              <a href="#enquire" class="about-prog-cta-tile">
+                <span class="cta-tile-text">Learn More About<br>The Programme.</span>
+                <span class="cta-tile-arrow">&larr;</span>
+              </a>
+            </div>
+            <img class="img-collage" src="Assets/Assets/about the programme/2.png" alt="India Collage" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     RECOGNITIONS
+══════════════════════════════════════════ -->
+  <section class="recognitions-section section-global">
+    <div class="recognitions-header">
+      <h2 class="recognitions-title text-center">Recognitions and Accreditations</h2>
+    </div>
+    <div class="recognitions-body">
+      <div class="recognitions-overlay"></div>
+      <div class="recognitions-inner">
+        <div class="recognitions-badges">
+          <div class="rec-badge"><img src="Assets/Assets/Recognitions/2.png" alt="Top 150 Under 50 Globally – QS 2022">
+          </div>
+          <div class="rec-badge rec-badge-large"><img src="Assets/Assets/Recognitions/1.png"
+              alt="Institution of Eminence"></div>
+          <div class="rec-badge rec-badge-center"><img src="Assets/Assets/Recognitions/3.png"
+              alt="No.1 Private University – QS 2021-2023"></div>
+          <div class="rec-badge rec-badge-large"><img src="Assets/Assets/Recognitions/4.png"
+              alt="No.1 Globally for Online Learning – THE 2024"></div>
+          <div class="rec-badge"><img src="Assets/Assets/Recognitions/5.png"
+              alt="No.1 Globally for Online Learning – THE 2024"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     MEET THE FACULTY
+══════════════════════════════════════════ -->
+  <section id="faculty" class="faculty-section py-5">
+    <div class="container">
+      <h2 class="faculty-main-title text-center">Meet the <span class="text-gradient">Faculty</span></h2>
+      <p class="faculty-subtitle text-center">Our faculty bring together global scholarship and Indian insight —
+        introducing the courses, questions, and inspirations that define the M.A. in India Studies.</p>
+
+      <div class="faculty-carousel-container">
+        <button class="faculty-nav-btn faculty-prev-btn" aria-label="Previous"><i
+            class="bi bi-chevron-left"></i></button>
+
+        <div class="faculty-grid-wrapper">
+          <div class="faculty-grid">
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/Dr. Michal Erlich.png" alt="Dr. Michal Erlich">
+              </div>
+              <h3 class="faculty-name">Dr. Michal Erlich</h3>
+              <p class="faculty-title-text">Deputy Director | Jindal India Institute<br>Associate Professor | Jindal
+                School of International Affairs</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/Prof. (Dr.) Hindol Sengupta.png"
+                  alt="Prof. Hindol Sengupta"></div>
+              <h3 class="faculty-name">Prof. (Dr.) Hindol Sengupta</h3>
+              <p class="faculty-title-text">Director | Jindal India Institute<br>Professor | Jindal School of
+                International Affairs</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/dr. sugandha nagpal.png"
+                  alt="Dr. Sugandha Nagpal"></div>
+              <h3 class="faculty-name">Dr. Sugandha Nagpal</h3>
+              <p class="faculty-title-text">Associate Professor<br>Jindal School of International Affairs</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/Dr. Swasti Rao.png" alt="Dr. Swasti Rao"></div>
+              <h3 class="faculty-name">Dr. Swasti Rao</h3>
+              <p class="faculty-title-text">Associate Professor & Associate Dean of Global Initiatives | Jindal School
+                of International Affairs</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/Mr. Raghav Dua.png" alt="Mr. Raghav Dua"></div>
+              <h3 class="faculty-name">Mr. Raghav Dua</h3>
+              <p class="faculty-title-text">Programme Lead | Jindal India Institute<br>Lecturer | Jindal School of
+                International Affairs</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/Dr. archana rath.png" alt="Dr. Archana Rath">
+              </div>
+              <h3 class="faculty-name">Dr. Archana Rath</h3>
+              <p class="faculty-title-text">Fellow, Jindal India Institute<br>Assistant Professor | Jindal School of
+                International Affairs</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/dr. sumeet anand.png" alt="Dr. Sumeet Anand">
+              </div>
+              <h3 class="faculty-name">Dr. Sumeet Anand</h3>
+              <p class="faculty-title-text">Adjunct Faculty<br>Jindal India Institute</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/dr. pooja arora.png" alt="Ms. Pooja Arora">
+              </div>
+              <h3 class="faculty-name">Ms. Pooja Arora</h3>
+              <p class="faculty-title-text">Lecturer<br>Jindal School of International Affairs</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/ms. bhavika behal.png" alt="Ms. Bhavika Behal">
+              </div>
+              <h3 class="faculty-name">Ms. Bhavika Behal</h3>
+              <p class="faculty-title-text">Assistant Lecturer<br>Jindal School of International Affairs</p>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="faculty-nav-btn faculty-next-btn" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     CASE STUDIES
+══════════════════════════════════════════ -->
+  <section class="case-studies-section">
+    <div class="container">
+      <h2 class="case-studies-title">Case Studies on <span class="text-purple">Culture</span>, Society, &amp; <span
+          class="text-cyan">Cinema</span></h2>
+      <p class="case-sub">A curated set of case studies examining how heritage, migration, and films have shaped India's
+        identity at home and across the world.</p>
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="case-card">
+            <div class="case-card-img"><img src="Assets/Assets/Case studies/Rectangle 249.png"
+                alt="Cultural Heritage" /></div>
+            <div class="case-body">
+              <h3 class="case-card-title">Cultural <span class="text-purple">Heritage</span> and Soft Power</h3>
+              <p class="case-excerpt">This case study looks at how the arts function as a core component of cultural
+                strength and national prosperity. India's rich musical traditions give the country a unique opportunity
+                to project its intangible heritage at home and abroad. The study considers how public-private
+                collaboration, supported by technological innovation, can help India use culture as a source of soft
+                power.</p>
+              <a href="#" class="btn-read">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="case-card">
+            <div class="case-card-img"><img src="Assets/Assets/Case studies/Rectangle 250.png"
+                alt="Ancient Traditions" /></div>
+            <div class="case-body">
+              <h3 class="case-card-title">Ancient <span class="text-purple">Traditions</span> and Nation <span
+                  class="text-cyan">Building</span></h3>
+              <p class="case-excerpt">This case study looks at how India's old music and dance traditions help shape
+                national identity. These traditions are not only forms of entertainment; they carry ideas and values
+                that have been passed down for centuries. By protecting and promoting them, a nation can stay connected
+                to its roots and draw guidance from its past.</p>
+              <a href="#" class="btn-read">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="case-card">
+            <div class="case-card-img"><img src="Assets/Assets/Case studies/Rectangle 251.png" alt="Indian Diaspora" />
+            </div>
+            <div class="case-body">
+              <h3 class="case-card-title">From Past to <span class="text-purple">Present</span>: The Journey of <span
+                  class="text-cyan">the</span> Indian Diaspora</h3>
+              <p class="case-excerpt">This case study traces the journey of Indians who moved to different parts of the
+                world. It covers early traders, indentured workers during colonial rule, and today's professionals. The
+                study shows how the diaspora influences the culture, economy, and politics of both India and their new
+                countries.</p>
+              <a href="#" class="btn-read">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="case-card">
+            <div class="case-card-img"><img src="Assets/Assets/Case studies/Rectangle 252.png" alt="Deewar" /></div>
+            <div class="case-body">
+              <h3 class="case-card-title">Deewar</h3>
+              <p class="case-excerpt">This case study explores the thrilling Salim-Javed blockbuster hit from the 1970s.
+                It connects the rise of the "Angry Young Man" archetype to the turbulent socio-political context of
+                India during the Emergency period. The narrative allows us to empathize more deeply with the rise and
+                fall of grey protagonists in Bollywood cinema.</p>
+              <a href="#" class="btn-read">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     ELIGIBILITY & FEES TABS
+══════════════════════════════════════════ -->
+  <section class="eligibility-section bg-eligibility" id="eligibility">
+    <div class="elig-bg"></div>
+    <div class="elig-overlay"></div>
+
+    <!-- Tabs -->
+    <ul class="nav elig-tabs justify-content-center mb-4" id="eligTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-elig" type="button">Eligibility &amp;
+          Application Process</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-fees" type="button">Fees &amp;
+          Financing</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-payment" type="button">Flexible Payment
+          Options</button>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="tab-content">
+
+        <!-- Tab 1: Eligibility -->
+        <div class="tab-pane fade show active" id="tab-elig" role="tabpanel">
+          <div class="elig-tab-inner">
+            <div class="elig-section-title">Eligibility</div>
+            <ul class="elig-list">
+              <li>Applicants to this programme must hold a bachelor’s degree in any discipline from a recognised
+                university.</li>
+              <li>Passport for International Applicants &amp; Govt. Issued ID Proof (Aadhar Card/PAN Card/Voter ID) for
+                Indian Applicants.</li>
+            </ul>
+            <div class="elig-section-title sec-2">Application Process</div>
+            <ul class="elig-list">
+              <li>Statement of Purpose (500-700 words)</li>
+              <li>Short Essay (800–1000 words) on one of the following:
+                <ul class="nested-gold-list">
+                  <li><span style="color:#FFD700; margin-right:4px;">1.</span> What aspect of India's history, culture,
+                    or philosophy inspires you the most, and why?</li>
+                  <li><span style="color:#FFD700; margin-right:4px;">2.</span> Which one aspect of India, according to
+                    you, has the potential to make a positive impact in shaping the 21st century?</li>
+                </ul>
+              </li>
+              <li>Document Review</li>
+              <li>Applications accepted on a rolling basis</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tab 2: Fees -->
+        <div class="tab-pane fade" id="tab-fees" role="tabpanel">
+          <div class="elig-tab-inner">
+            <ul class="elig-list" style="margin-bottom: 0;">
+              <li>₹2,50,000 (for Indian applicants). For international learners, tuition is payable in equivalent local
+                currency at the time of payment.</li>
+              <li>Indian students have the option to pay their tuition fees in multiple installments, as outlined below:
+              </li>
+            </ul>
+            <table class="fee-table">
+              <thead>
+                <tr>
+                  <th>Fee Component</th>
+                  <th>Amount (INR)</th>
+                  <th>Due Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Block Amount</td>
+                  <td>50,000</td>
+                  <td>Upon acceptance of the offer letter</td>
+                </tr>
+                <tr>
+                  <td>Installment-I</td>
+                  <td>1,00,000</td>
+                  <td>20 Days after the Programme begins</td>
+                </tr>
+                <tr>
+                  <td>Installment-II</td>
+                  <td>1,00,000</td>
+                  <td>Prior to the commencement of Term 3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 3: Flexible Payment -->
+        <div class="tab-pane fade" id="tab-payment" role="tabpanel">
+          <div class="elig-tab-inner">
+            <p class="pay-intro"
+              style="font-size:15px; color:#ffffff; line-height:1.85; margin-bottom:24px; font-weight:500;">Pay
+              conveniently through JODOCRED, with low-interest monthly instalments and a fully digital 15-minute
+              approval process.</p>
+            <div class="elig-section-title sec-2">➤ KEY BENEFITS</div>
+            <ul class="nested-gold-list">
+              <li><span style="color:#FFD700; margin-right:4px;">1.</span> Fully digital journey that can be completed
+                within 15 minutes from application to loan agreement.</li>
+              <li><span style="color:#FFD700; margin-right:4px;">2.</span> Only your PAN number is required for initial
+                registration and approval.</li>
+              <li><span style="color:#FFD700; margin-right:4px;">3.</span> 24×7 helpline available to guide you through
+                the application process. · Begin your application at <a href="https://app.jodo.in/jgu" target="_blank"
+                  style="color:#FFD700; text-decoration:underline; font-weight:700;">app.jodo.in/jgu</a></li>
+            </ul>
+            <ul class="elig-list" style="margin-top: 36px; margin-bottom: 0;">
+              <li>For assistance, connect directly with JODO representatives at &nbsp;<strong>99729 82193</strong>&nbsp;
+                or &nbsp;<strong>96201 42953</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     FROM THE STUDENT COMMUNITY
+══════════════════════════════════════════ -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="sc-layout">
+
+        <!-- Left: Title column -->
+        <div class="sc-left-col">
+          <h2 class="test-main-title">
+            <span>From <span class="text-purple">the</span></span>
+            <span>Student</span>
+            <span>Commun<span class="text-cyan">ity</span></span>
+          </h2>
+          <p class="test-subtitle">-Let's Hear From<br>Them Directly</p>
+        </div>
+
+        <!-- Right: Cards + nav -->
+        <div class="sc-right-col">
+          <div class="sc-slider-wrap">
+            <div class="test-grid">
+
+              <!-- Card 1: Vinay Chawla -->
+              <div class="test-card">
+                <div class="test-avatar">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg">
+                    <circle cx="12" cy="8" r="4.5" />
+                    <path d="M5.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" />
+                  </svg>
+                </div>
+                <p class="test-name">Vinay Chawla</p>
+                <p class="test-role">Founder, Asian Centre For<br>Development Engineering</p>
+                <div class="test-text">
+                  "I joined the first batch of the M.A. in India Studies at O.P. Jindal Global University after
+                  exploring many options in India that could support my social start-up in development engineering. This
+                  online programme fits perfectly and brings more than just theory.
+                  <br>
+                  In the first trimester, we explored Indian history, politics, and philosophies like Hinduism,
+                  Buddhism, and Jainism through real conversations with great professors. They make complex ideas clear
+                  and easy to relate to for anyone. My classmates are from all over the world and share many
+                  perspectives.
+                  <br>
+                  The programme is helping me find the right business case and the exact social issue I want to focus on
+                  for my start-up. If you want to connect academic study with real impact, especially future social
+                  entrepreneurs, this programme stands out."
+                </div>
+              </div>
+
+              <!-- Card 2: Koji Sato -->
+              <div class="test-card featured">
+                <div class="test-avatar">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg">
+                    <circle cx="12" cy="8" r="4.5" />
+                    <path d="M5.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" />
+                  </svg>
+                </div>
+                <p class="test-name">Koji Sato</p>
+                <p class="test-role">Director General, The Japan<br>Foundation, New Delhi Office</p>
+                <div class="test-text">
+                  "I have been associated with India for a long time and I am currently living and working in Delhi.
+                  With more than eight years of experience here, I felt I knew India well...but I wanted to deepen my
+                  understanding of this wonderful country and its culture.
+                  <br>
+                  When I discovered the M.A. in India Studies programme online, I knew it was the right course for me.
+                  So far, I have taken three courses and one of them also focused on philosophy and religion. All have
+                  been excellent, but the philosophy and religion course, in particular, made me feel like I was
+                  reaching the very core of the Indian heart. The programme's online format is a huge advantage. The
+                  video lectures are well-designed, and I can study at my own pace, something very valuable for
+                  professionals like me. Some assessments were challenging, but that was also the fun part.
+                  <br>
+                  Returning to academics after 20-30 years, writing a short thesis was truly exciting and has motivated
+                  me to keep learning and developing. Whether you are a student, job seeker, or professional anywhere in
+                  the world, this programme offers a concentrated, one-year journey that immerses you deeply in India's
+                  history, culture, and much more. I strongly recommend it to anyone interested."
+                </div>
+              </div>
+
+              <!-- Card 3: Rajni P. -->
+              <div class="test-card">
+                <div class="test-avatar">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg">
+                    <circle cx="12" cy="8" r="4.5" />
+                    <path d="M5.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" />
+                  </svg>
+                </div>
+                <p class="test-name">Rajni P.</p>
+                <p class="test-role">Student, O.P. Jindal Global University</p>
+                <div class="test-text">
+                  "The M.A. in India Studies programme at the O.P. Jindal Global University has been such a unique and
+                  eye-opening experience for me. I joined the programme wanting to learn more about India's history,
+                  culture, philosophy, politics, and international relations.
+                  <br>
+                  The faculty are greatly knowledgeable, and their ability to make complex subjects accessible has made
+                  the classes both engaging and inspiring. I also greatly value the supportive environment created by
+                  the staff. The vibrant exchange of perspectives within the cohort, by interacting with classmates from
+                  across the globe, has broadened my own outlook about India and made the journey even more rewarding.
+                  <br>
+                  This programme has strengthened my understanding of India's past, present, and future, and I would
+                  highly recommend it to anyone with a genuine curiosity about India."
+                </div>
+              </div>
+
+              <!-- Card 4: Muiris Ó Cléidigh -->
+              <div class="test-card">
+                <div class="test-avatar">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg">
+                    <circle cx="12" cy="8" r="4.5" />
+                    <path d="M5.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" />
+                  </svg>
+                </div>
+                <p class="test-name">Muiris Ó Cléidigh</p>
+                <p class="test-role">Policy Analyst, European Union</p>
+                <div class="test-text">
+                  "As someone who works on South Asia policy, this programme was invaluable. The faculty brought
+                  nuanced, real-world perspectives that went far beyond textbook knowledge, and the peer discussions
+                  were genuinely enriching.
+                  <br>
+                  The flexibility to balance my active workload with absolute academic rigour made it the ideal choice
+                  for professional advancement. I strongly recommend this specialized curriculum to other global policy
+                  analysts."
+                </div>
+              </div>
+
+              <!-- Card 5: Michael Barnaby Levin -->
+              <div class="test-card">
+                <div class="test-avatar">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg">
+                    <circle cx="12" cy="8" r="4.5" />
+                    <path d="M5.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" />
+                  </svg>
+                </div>
+                <p class="test-name">Michael Barnaby Levin</p>
+                <p class="test-role">Higher Education Analyst, Senior Advisor</p>
+                <div class="test-text">
+                  "I am confident that the M.A. in India Studies at JGU is among the most comprehensive and
+                  well-designed programmes for anyone seeking to truly understand India — its past, its present, and its
+                  extraordinary future.
+                  <br>
+                  The masterclass format, paired with the stellar quality of global lectures and deeply engaging
+                  discussions, provides students with a world-class educational experience. It is a defining milestone
+                  for anyone curious about South Asia."
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="sc-nav-row">
+            <button class="faculty-nav-btn" id="testPrev" aria-label="Previous"><i
+                class="bi bi-chevron-left"></i></button>
+            <button class="faculty-nav-btn" id="testNext" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     VIDEO SECTION
+══════════════════════════════════════════ -->
+  <section class="video-section" style="margin-bottom:50px">
+    <div class="container">
+      <!-- Replace data-youtube with actual YouTube URL -->
+      <div class="video-box" data-youtube="https://www.youtube.com/watch?v=REPLACE_VIDEO_ID" style="cursor:pointer;">
+        <img src="Assets/Assets/video/Group 79.png" class="video-bg" alt="Know About JII &amp; M.A. India Studies">
+        <div class="video-border"></div>
+        <div class="play-btn"><span>▶</span></div>
+        <div class="video-text">Know About JII &amp; M.A. India Studies</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     JINDAL INDIA INSTITUTE
+══════════════════════════════════════════ -->
+  <section class="jii-section section-global">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 offset-lg-1 col-md-12 jii-overlay-col">
+          <h2 class="jii-title">The Jindal India<br class="d-none d-lg-block">Institute</h2>
+          <div class="jii-body">
+            <p>The <strong>Jindal India Institute (JII)</strong> is the <strong>flagship think-tank initiative</strong>
+              of the O.P. Jindal Global University (JGU), aimed at promoting a comprehensive and contextual
+              understanding of India around the world. India's rising influence in the world has created an
+              unprecedented demand for a richer, more textured, and interdisciplinary understanding of its complexities
+              – historical, cultural, political, economic, and philosophical.</p>
+            <p>JII responds to this demand through a wide range of initiatives, including training programmes for
+              foreign diplomats, research projects, expert-led public events, and a pioneering <strong>Master of Arts
+                (M.A.) in India Studies</strong>, the first of its kind in the online domain, and the only such
+              programme in India.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════ -->
+  <section class="faq-section section-global py-5" id="faq">
+    <div class="container">
+      <h2 class="faq-main-title text-center mb-5">Frequently Asked Questions <span class="text-gradient">(FAQs)</span>
+      </h2>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="accordion" id="faqLeft">
+
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header m-0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1">
+                  Is it possible to work while enrolled in the programme?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body">Yes. The programme is 100% online and designed for working professionals.
+                  All lectures are recorded and accessible at any time, allowing you to learn at your own pace and
+                  schedule studies around your professional commitments.</div>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header m-0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  What is unique about this programme?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body">This is India's only online M.A. dedicated exclusively to India Studies,
+                  offered by JGU — India's #1 ranked private university. The curriculum uniquely combines political
+                  history, philosophy, economy, culture, cinema, and spirituality in a single interdisciplinary degree.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header m-0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq5">
+                  What learning resources are available?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body">Students have access to JGU's digital library, recorded video lectures, live
+                  webinars with faculty and guest experts, discussion forums, curated reading materials, and 24×7
+                  academic support services throughout the programme.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="accordion" id="faqRight">
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header m-0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  What career opportunities does this programme prepare me for?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body">Graduates are prepared for careers in academia, diplomacy and foreign
+                  policy, journalism, cultural consultancy, business development with India-focused organisations, think
+                  tanks, NGOs, and international development agencies.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header m-0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq4">
+                  Is there an entrance test?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body">There is no entrance examination. Admission is based on your Statement of
+                  Purpose, a Short Essay, and document review. Applications are accepted on a rolling basis, so early
+                  application is encouraged.</div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     ENQUIRE NOW
+══════════════════════════════════════════ -->
+  <section class="enquire-section section-global py-5" id="enquire">
+    <div class="container">
+      <h2 class="enquire-section-title text-center">Enquire Now!</h2>
+      <div class="enquire-form-container mx-auto">
+        <div class="row align-items-stretch g-0">
+
+          <!-- Form -->
+          <div class="col-lg-6 col-md-12 enquire-form-left">
+            <div class="npf_wgts" data-height="400px" data-w="163d3e432dd1cc62ee589e07272304d0"></div>
+          </div>
+
+          <!-- Info -->
+          <div class="col-lg-6 col-md-12 enquire-form-right d-flex flex-column justify-content-center">
+            <h2 class="enquire-info-title">Let's connect and shape your path at JGU!</h2>
+            <p class="enquire-info-sub">Reach out to know more about programmes, admissions, and opportunities.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+  <footer class="py-4">
+    <p class="text-center fw-bold mb-0">&copy; 2026 O.P. Jindal Global University. All Rights Reserved</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      /* ── PROGRAMME HIGHLIGHTS SLIDER ── */
+      const track = $('.slider-track');
+      const items = $('.slider-item');
+      let current = 0;
+
+      function getVisible() {
+        if (window.innerWidth < 576) return 1;
+        if (window.innerWidth < 768) return 1;
+        if (window.innerWidth < 1024) return 2;
+        return 3;
+      }
+
+      function updateSlider() {
+        const visibleCount = getVisible();
+        const wrapperWidth = $('.slider-wrapper').width();
+        const itemWidth = wrapperWidth / visibleCount;
+        items.css({ 'min-width': itemWidth + 'px', 'max-width': itemWidth + 'px', 'width': itemWidth + 'px' });
+        track.css('transform', 'translateX(-' + (current * itemWidth) + 'px)');
+      }
+
+      $('.right-btn').on('click', function () {
+        const visibleCount = getVisible();
+        if (current < items.length - visibleCount) { current++; updateSlider(); }
+      });
+
+      $('.left-btn').on('click', function () {
+        if (current > 0) { current--; updateSlider(); }
+      });
+
+      $(window).on('resize', function () { current = 0; updateSlider(); updateFaculty(); updateTest(); updateRecognitions(); });
+      updateSlider();
+
+      /* ── RECOGNITIONS CAROUSEL FOR MOBILE ── */
+      const $reconBadge = $('.recognitions-badges');
+      function updateRecognitions() {
+        if (window.innerWidth <= 768) {
+          if (!$reconBadge.hasClass('owl-carousel')) {
+            $reconBadge.addClass('owl-carousel owl-theme').owlCarousel({
+              items: 1,
+              margin: 20,
+              loop: true,
+              nav: false,
+              dots: true,
+              autoplay: true,
+              autoplayTimeout: 3500
+            });
+          }
+        } else {
+          if ($reconBadge.hasClass('owl-carousel')) {
+            $reconBadge.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-theme');
+          }
+        }
+      }
+      updateRecognitions();
+
+      /* ── FACULTY CAROUSEL ── */
+      const facultyGrid = document.querySelector('.faculty-grid');
+      const facultyCards = document.querySelectorAll('.faculty-card');
+      const prevBtn = document.querySelector('.faculty-prev-btn');
+      const nextBtn = document.querySelector('.faculty-next-btn');
+      let fIdx = 0;
+
+      function updateFaculty() {
+        if (!facultyGrid || !facultyCards.length) return;
+        const gap = parseFloat(window.getComputedStyle(facultyGrid).gap) || 0;
+        const w = facultyCards[0].offsetWidth + gap;
+        facultyGrid.style.transform = 'translateX(-' + (fIdx * w) + 'px)';
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => { if (fIdx > 0) { fIdx--; updateFaculty(); } });
+      }
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          if (!facultyGrid) return;
+          const gap = parseFloat(window.getComputedStyle(facultyGrid).gap) || 0;
+          const w = facultyCards[0].offsetWidth + gap;
+          const visible = Math.floor(facultyGrid.parentElement.offsetWidth / w) || 1;
+          const maxIdx = Math.max(0, facultyCards.length - visible);
+          if (fIdx < maxIdx) { fIdx++; updateFaculty(); }
+        });
+      }
+      updateFaculty();
+
+      /* ── TESTIMONIALS SLIDER ── */
+      const testGrid = document.querySelector('.test-grid');
+      const testCards = document.querySelectorAll('.test-card');
+      let tIdx = 0;
+
+      function updateTest() {
+        if (!testGrid || !testCards.length) return;
+        const gap = parseFloat(window.getComputedStyle(testGrid).gap) || 0;
+        const w = testCards[0].offsetWidth + gap;
+        testGrid.style.transform = 'translateX(-' + (tIdx * w) + 'px)';
+      }
+
+      document.getElementById('testPrev')?.addEventListener('click', () => {
+        if (tIdx > 0) { tIdx--; updateTest(); }
+      });
+
+      document.getElementById('testNext')?.addEventListener('click', () => {
+        if (!testGrid) return;
+        const gap = parseFloat(window.getComputedStyle(testGrid).gap) || 0;
+        const w = testCards[0].offsetWidth + gap;
+        const sliderWrap = document.querySelector('.sc-slider-wrap');
+        const visible = Math.floor((sliderWrap ? sliderWrap.offsetWidth : testGrid.parentElement.offsetWidth) / w) || 1;
+        const maxIdx = Math.max(0, testCards.length - visible);
+        if (tIdx < maxIdx) { tIdx++; updateTest(); }
+      });
+
+      updateTest();
+
+      /* ── VIDEO BOX ── */
+      const videoBox = document.querySelector('.video-box[data-youtube]');
+      if (videoBox) {
+        videoBox.addEventListener('click', function () {
+          const url = this.getAttribute('data-youtube');
+          if (url && url.indexOf('REPLACE_VIDEO_ID') === -1) {
+            window.open(url, '_blank');
+          }
+        });
+      }
+
+      /* ── DYNAMIC BACKGROUND SWAP FOR ELIGIBILITY SECTION ── */
+      $('#eligTabs button').on('shown.bs.tab', function (e) {
+        const targetId = $(e.target).attr('data-bs-target');
+        const $sec = $('.eligibility-section');
+        $sec.removeClass('bg-eligibility bg-fees bg-payment');
+        if (targetId === '#tab-elig') {
+          $sec.addClass('bg-eligibility');
+        } else if (targetId === '#tab-fees') {
+          $sec.addClass('bg-fees');
+        } else if (targetId === '#tab-payment') {
+          $sec.addClass('bg-payment');
+        }
+      });
+
+    });
+  </script>
+
+  <!-- NoPaperForms -->
+  <script type="text/javascript">var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.in8.nopaperforms.com/emwgts.js"; document.body.appendChild(s);</script>
+
+  <script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script><script>let npfW163d3e432dd1cc62ee589e07272304d0 = new NpfWidgetsInit(        {'widgetId':'163d3e432dd1cc62ee589e07272304d0',    'baseurl':'widgets.in8.nopaperforms.com',    'formTitle':'Enquiry Form',    'titleColor':'#FF0033',    'backgroundColor':'#ddd',    'iframeHeight':'500px',     'buttonbgColor':'#4c79dc',     'buttonTextColor':'#FFF',    });</script>
+
+</body>
+
+</html>
