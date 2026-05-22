@@ -1291,12 +1291,19 @@
 
     .elig-list li {
       display: flex;
+      flex-wrap: wrap;
       gap: 12px;
       color: #ffffff !important;
       font-size: 15px;
       line-height: 1.85;
       margin-bottom: 16px;
       font-weight: 500;
+    }
+
+    /* Nested numbered list must stack BELOW its parent line, not beside it */
+    .elig-list .nested-gold-list {
+      flex-basis: 100%;
+      width: 100%;
     }
 
     .elig-list li::before {
