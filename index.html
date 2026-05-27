@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,300;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,300;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
   <style>
@@ -181,8 +181,8 @@
       /* Elevated above the ::after overlay (z-index 2) to maintain full interactability */
       display: flex;
       align-items: stretch;
-      min-height: 580px;
-      padding: 40px 60px 48px;
+      min-height: 520px;
+      padding: 20px 60px 24px;
       gap: 28px;
     }
 
@@ -522,15 +522,13 @@
     .about-prog-title {
       font-size: clamp(34px, 4.4vw, 48px);
       font-weight: 800;
-      color: #0d1b73;
+      background: linear-gradient(90deg, #0D1B73 0%, #6A0DAD 50%, #00C2CB 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
       line-height: 1.25;
       margin-bottom: 24px;
-    }
-
-    .about-prog-title em {
-      color: #6a0dad;
-      font-style: italic;
-      font-weight: 800;
     }
 
     .about-prog-body {
@@ -682,7 +680,7 @@
 
     .slider-item {
       flex: 0 0 auto;
-      padding: 0 24px;
+      padding: 0 38px;
       display: flex;
       flex-direction: column;
     }
@@ -742,9 +740,10 @@
     }
 
     .card-text {
-      font-size: 12px;
-      line-height: 1.6;
-      color: #333;
+      font-family: 'DM Sans', sans-serif;
+      font-size: clamp(12px, 1.0vw, 15px);
+      line-height: 1.35;
+      color: #0d1b73;
       margin: 0;
       font-weight: 500;
     }
@@ -1093,8 +1092,8 @@
     }
 
     .case-card-img {
-      flex: 0 0 38%;
-      max-width: 38%;
+      flex: 0 0 42%;
+      max-width: 42%;
       aspect-ratio: 3 / 4;
       /* Enforce a beautiful tall vertical portrait format as in Figma */
       border-radius: 18px;
@@ -2342,8 +2341,8 @@
           <span class="info-tile-value">Programme</span>
         </div>
         <div class="info-tile">
-          <span class="info-tile-label">Easy EMI</span>
-          <span class="info-tile-value">Options</span>
+          <span class="info-tile-label">Options</span>
+          <span class="info-tile-value">Easy EMI</span>
         </div>
       </div>
 
@@ -2502,17 +2501,19 @@
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-6">
-          <h2 class="about-prog-title">About the <em>Programme</em></h2>
-          <p class="about-prog-body">The online <strong>Master of Arts in India Studies</strong> offered by the
-            <strong>Jindal India Institute (JII)</strong> at <strong>O.P. Jindal Global University (JGU)</strong> gives
-            you a comprehensive understanding of India's complexity and global relevance. Over one year, you will
-            explore India's politics, history, philosophy, economy, civilisation, culture, music, cinema and more
-            &mdash; so you gain both depth and breadth of knowledge.
-          </p>
-          <p class="about-prog-body">Designed for flexibility, the 100% online format allows you to learn from leading
-            faculty while balancing work and personal commitments. Through immersive coursework and real-world
-            engagements, you will develop a well-rounded perspective on India's diversity and its evolving role in the
-            global landscape, preparing you for careers across academia, policy, business, and beyond.</p>
+          <h2 class="about-prog-title">About the Programme</h2>
+          <p class="about-prog-body">The <strong>Master of Arts in India Studies</strong> offered by the
+            <strong>Jindal India Institute (JII)</strong> at <strong>O.P. Jindal Global University (JGU)</strong>
+            offers a unique opportunity to learn about the many facets of India. Over the course of one year, you'll
+            explore everything from India's politics, history, and philosophy to its business, technology, literature,
+            music, dance, and cinema. This comprehensive programme is designed for those who want to gain a deep and
+            wide understanding of India's diversity and dynamism while studying flexibly from anywhere in the world.
+            You'll learn from some of the best scholars in the field, all of whom bring an interdisciplinary approach
+            to their teaching.</p>
+          <p class="about-prog-body">With <strong>100% online interactive learning</strong>, you can continue working,
+            balance your personal life, and avoid the costs of relocation, while accessing a rich repository of
+            learning resources. Join a global community of students and broaden your perspective on India and its role
+            in shaping the world today.</p>
         </div>
         <div class="col-lg-6">
           <div class="about-prog-images">
@@ -2642,7 +2643,7 @@
                 to project its intangible heritage at home and abroad. The study considers how public-private
                 collaboration, supported by technological innovation, can help India use culture as a source of soft
                 power.</p>
-              <a href="#" class="btn-read">Read More</a>
+              <a href="javascript:void(0);" class="btn-read" role="button">Read More</a>
             </div>
           </div>
         </div>
@@ -2658,7 +2659,7 @@
                 national identity. These traditions are not only forms of entertainment; they carry ideas and values
                 that have been passed down for centuries. By protecting and promoting them, a nation can stay connected
                 to its roots and draw guidance from its past.</p>
-              <a href="#" class="btn-read">Read More</a>
+              <a href="javascript:void(0);" class="btn-read" role="button">Read More</a>
             </div>
           </div>
         </div>
@@ -2674,7 +2675,7 @@
                 world. It covers early traders, indentured workers during colonial rule, and today's professionals. The
                 study shows how the diaspora influences the culture, economy, and politics of both India and their new
                 countries.</p>
-              <a href="#" class="btn-read">Read More</a>
+              <a href="javascript:void(0);" class="btn-read" role="button">Read More</a>
             </div>
           </div>
         </div>
@@ -2688,7 +2689,7 @@
                 It connects the rise of the "Angry Young Man" archetype to the turbulent socio-political context of
                 India during the Emergency period. The narrative allows us to empathize more deeply with the rise and
                 fall of grey protagonists in Bollywood cinema.</p>
-              <a href="#" class="btn-read">Read More</a>
+              <a href="javascript:void(0);" class="btn-read" role="button">Read More</a>
             </div>
           </div>
         </div>
