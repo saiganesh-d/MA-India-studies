@@ -191,7 +191,8 @@
       max-width: 60%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
+      padding-top: 30px;
     }
 
     .hero-form-col {
@@ -1558,12 +1559,12 @@
     }
 
     .test-text {
-      font-size: 11px;
+      font-size: 13px;
       color: #444444;
-      line-height: 1.45;
+      line-height: 1.7;
       font-weight: 500;
       text-align: left;
-      margin-top: 0;
+      margin-top: 4px;
       font-family: 'Montserrat', sans-serif;
       flex-grow: 1;
       overflow-y: auto;
@@ -2302,7 +2303,7 @@
 
         <!-- Left: Text -->
         <div class="hero-text-col">
-          <p class="hero-pretitle">Journey Into The Heart Of India With The</p>
+          <p class="hero-pretitle">Journey into the Heart of India with the</p>
           <p class="hero-ma">M.A. in</p>
           <h1 class="hero-title"><span class="text-navy">India</span> <span class="text-gradient-studies">Studies</span>
           </h1>
@@ -2337,8 +2338,8 @@
           <span class="info-tile-value">September 2026</span>
         </div>
         <div class="info-tile">
-          <span class="info-tile-label">Fully Online</span>
-          <span class="info-tile-value">Programme</span>
+          <span class="info-tile-label">Programme</span>
+          <span class="info-tile-value">100% Online</span>
         </div>
         <div class="info-tile">
           <span class="info-tile-value">Easy EMI</span>
@@ -2537,8 +2538,6 @@
   <section id="faculty" class="faculty-section py-5">
     <div class="container">
       <h2 class="faculty-main-title text-center">Meet the <span class="text-gradient">Faculty</span></h2>
-      <p class="faculty-subtitle text-center">Our faculty bring together global scholarship and Indian insight —
-        introducing the courses, questions, and inspirations that define the M.A. in India Studies.</p>
 
       <div class="faculty-carousel-container">
         <button class="faculty-nav-btn faculty-prev-btn" aria-label="Previous"><i
@@ -2548,69 +2547,80 @@
           <div class="faculty-grid">
 
             <div class="faculty-card">
-              <div class="faculty-image"><img src="Assets/Assets/faculty/Dr. Michal Erlich.png" alt="Dr. Michal Erlich">
-              </div>
-              <h3 class="faculty-name">Dr. Michal Erlich</h3>
-              <p class="faculty-title-text">Deputy Director | Jindal India Institute<br>Associate Professor | Jindal
-                School of International Affairs</p>
+              <div class="faculty-image"><img src="Assets/Assets/faculty/Dr. Michal Erlich.png"
+                  alt="Prof. (Dr.) Michal Riva Erlich"></div>
+              <h3 class="faculty-name">Prof. (Dr.) Michal Riva Erlich</h3>
+              <p class="faculty-title-text">Associate Professor, Jindal School of International Affairs (JSIA)<br>&amp;
+                Director, Jindal India Institute (JII)</p>
             </div>
 
             <div class="faculty-card">
               <div class="faculty-image"><img src="Assets/Assets/faculty/Prof. (Dr.) Hindol Sengupta.png"
-                  alt="Prof. Hindol Sengupta"></div>
+                  alt="Prof. (Dr.) Hindol Sengupta"></div>
               <h3 class="faculty-name">Prof. (Dr.) Hindol Sengupta</h3>
-              <p class="faculty-title-text">Director | Jindal India Institute<br>Professor | Jindal School of
-                International Affairs</p>
+              <p class="faculty-title-text">Professor and Executive Dean, Jindal School of International Affairs<br>&amp;
+                Director, Jindal India Institute</p>
             </div>
 
             <div class="faculty-card">
-              <div class="faculty-image"><img src="Assets/Assets/faculty/dr. sugandha nagpal.png"
-                  alt="Dr. Sugandha Nagpal"></div>
-              <h3 class="faculty-name">Dr. Sugandha Nagpal</h3>
-              <p class="faculty-title-text">Associate Professor<br>Jindal School of International Affairs</p>
-            </div>
-
-            <div class="faculty-card">
-              <div class="faculty-image"><img src="Assets/Assets/faculty/Dr. Swasti Rao.png" alt="Dr. Swasti Rao"></div>
-              <h3 class="faculty-name">Dr. Swasti Rao</h3>
-              <p class="faculty-title-text">Associate Professor & Associate Dean of Global Initiatives | Jindal School
+              <div class="faculty-image"><img src="Assets/Assets/faculty/Dr. Swasti Rao.png"
+                  alt="Prof. (Dr.) Swasti Rao"></div>
+              <h3 class="faculty-name">Prof. (Dr.) Swasti Rao</h3>
+              <p class="faculty-title-text">Associate Professor and Associate Dean, Global Initiatives,<br>Jindal School
                 of International Affairs</p>
             </div>
 
             <div class="faculty-card">
-              <div class="faculty-image"><img src="Assets/Assets/faculty/Mr. Raghav Dua.png" alt="Mr. Raghav Dua"></div>
-              <h3 class="faculty-name">Mr. Raghav Dua</h3>
-              <p class="faculty-title-text">Programme Lead | Jindal India Institute<br>Lecturer | Jindal School of
-                International Affairs</p>
+              <div class="faculty-image"><img src="Assets/Assets/faculty/Mr. Raghav Dua.png" alt="Prof. Raghav Dua">
+              </div>
+              <h3 class="faculty-name">Prof. Raghav Dua</h3>
+              <p class="faculty-title-text">Lecturer, Jindal School of International Affairs<br>&amp; Programmes Lead,
+                Jindal India Institute</p>
             </div>
 
             <div class="faculty-card">
-              <div class="faculty-image"><img src="Assets/Assets/faculty/Dr. archana rath.png" alt="Dr. Archana Rath">
-              </div>
-              <h3 class="faculty-name">Dr. Archana Rath</h3>
-              <p class="faculty-title-text">Fellow, Jindal India Institute<br>Assistant Professor | Jindal School of
-                International Affairs</p>
+              <div class="faculty-image"><img src="Assets/Assets/faculty/Dr. archana rath.png"
+                  alt="Prof. (Dr.) Archana Rath"></div>
+              <h3 class="faculty-name">Prof. (Dr.) Archana Rath</h3>
+              <p class="faculty-title-text">Assistant Professor, Jindal School of International Affairs<br>&amp; Fellow,
+                Jindal India Institute</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/dr. pooja arora.png"
+                  alt="Prof. (Dr.) Pooja Arora"></div>
+              <h3 class="faculty-name">Prof. (Dr.) Pooja Arora</h3>
+              <p class="faculty-title-text">Assistant Professor,<br>Jindal School of International Affairs</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/ms. bhavika behal.png"
+                  alt="Prof. Bhavika Behal"></div>
+              <h3 class="faculty-name">Prof. Bhavika Behal</h3>
+              <p class="faculty-title-text">Lecturer and Programme Coordinator &ndash; Online Programmes,<br>Jindal
+                School of International Affairs</p>
+            </div>
+
+            <div class="faculty-card">
+              <div class="faculty-image"><img src="Assets/Assets/faculty/Preethi Amaresh.png"
+                  alt="Prof. (Dr.) Preethi Amaresh"></div>
+              <h3 class="faculty-name">Prof. (Dr.) Preethi Amaresh</h3>
+              <p class="faculty-title-text">Assistant Professor,<br>Jindal School of International Affairs</p>
             </div>
 
             <div class="faculty-card">
               <div class="faculty-image"><img src="Assets/Assets/faculty/dr. sumeet anand.png" alt="Dr. Sumeet Anand">
               </div>
               <h3 class="faculty-name">Dr. Sumeet Anand</h3>
-              <p class="faculty-title-text">Adjunct Faculty<br>Jindal India Institute</p>
+              <p class="faculty-title-text">Adjunct Faculty,<br>Jindal India Institute</p>
             </div>
 
             <div class="faculty-card">
-              <div class="faculty-image"><img src="Assets/Assets/faculty/dr. pooja arora.png" alt="Ms. Pooja Arora">
-              </div>
-              <h3 class="faculty-name">Ms. Pooja Arora</h3>
-              <p class="faculty-title-text">Lecturer<br>Jindal School of International Affairs</p>
-            </div>
-
-            <div class="faculty-card">
-              <div class="faculty-image"><img src="Assets/Assets/faculty/ms. bhavika behal.png" alt="Ms. Bhavika Behal">
-              </div>
-              <h3 class="faculty-name">Ms. Bhavika Behal</h3>
-              <p class="faculty-title-text">Assistant Lecturer<br>Jindal School of International Affairs</p>
+              <div class="faculty-image"><img src="Assets/Assets/faculty/dr. sugandha nagpal.png"
+                  alt="Dr. Sugandha Nagpal"></div>
+              <h3 class="faculty-name">Dr. Sugandha Nagpal</h3>
+              <p class="faculty-title-text">Associate Professor, Jindal School of International Affairs<br>&amp; Fellow,
+                Jindal India Institute</p>
             </div>
 
           </div>
@@ -2626,10 +2636,7 @@
 ══════════════════════════════════════════ -->
   <section class="case-studies-section">
     <div class="container">
-      <h2 class="case-studies-title">Case Studies on <span class="text-purple">Culture</span>, Society, &amp; <span
-          class="text-cyan">Cinema</span></h2>
-      <p class="case-sub">A curated set of case studies examining how heritage, migration, and films have shaped India's
-        identity at home and across the world.</p>
+      <h2 class="case-studies-title">Case Studies</h2>
       <div class="row g-4">
 
         <div class="col-md-6">
@@ -2643,7 +2650,6 @@
                 to project its intangible heritage at home and abroad. The study considers how public-private
                 collaboration, supported by technological innovation, can help India use culture as a source of soft
                 power.</p>
-              <a href="javascript:void(0);" class="btn-read" role="button">Read More</a>
             </div>
           </div>
         </div>
@@ -2659,7 +2665,6 @@
                 national identity. These traditions are not only forms of entertainment; they carry ideas and values
                 that have been passed down for centuries. By protecting and promoting them, a nation can stay connected
                 to its roots and draw guidance from its past.</p>
-              <a href="javascript:void(0);" class="btn-read" role="button">Read More</a>
             </div>
           </div>
         </div>
@@ -2675,7 +2680,6 @@
                 world. It covers early traders, indentured workers during colonial rule, and today's professionals. The
                 study shows how the diaspora influences the culture, economy, and politics of both India and their new
                 countries.</p>
-              <a href="javascript:void(0);" class="btn-read" role="button">Read More</a>
             </div>
           </div>
         </div>
@@ -2689,7 +2693,6 @@
                 It connects the rise of the "Angry Young Man" archetype to the turbulent socio-political context of
                 India during the Emergency period. The narrative allows us to empathize more deeply with the rise and
                 fall of grey protagonists in Bollywood cinema.</p>
-              <a href="javascript:void(0);" class="btn-read" role="button">Read More</a>
             </div>
           </div>
         </div>
@@ -2755,34 +2758,34 @@
         <div class="tab-pane fade" id="tab-fees" role="tabpanel">
           <div class="elig-tab-inner">
             <ul class="elig-list" style="margin-bottom: 0;">
-              <li>₹2,50,000 (for Indian applicants). For international learners, tuition is payable in equivalent local
-                currency at the time of payment.</li>
+              <li>Total Tuition Fee: <strong>₹2,75,000</strong> (for Indian applicants). For international learners,
+                tuition is payable in equivalent local currency at the time of payment.</li>
               <li>Indian students have the option to pay their tuition fees in multiple installments, as outlined below:
               </li>
             </ul>
             <table class="fee-table">
               <thead>
                 <tr>
-                  <th>Fee Component</th>
-                  <th>Amount (INR)</th>
+                  <th>Fee</th>
+                  <th>Amount</th>
                   <th>Due Date</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Block Amount</td>
-                  <td>50,000</td>
-                  <td>Upon acceptance of the offer letter</td>
+                  <td>Registration Amount</td>
+                  <td>INR 25,000</td>
+                  <td>Upon acceptance of Offer Letter</td>
                 </tr>
                 <tr>
-                  <td>Installment-I</td>
-                  <td>1,00,000</td>
-                  <td>20 Days after the Programme begins</td>
+                  <td>Instalment 1</td>
+                  <td>INR 1,25,000</td>
+                  <td>Before Batch Commencement</td>
                 </tr>
                 <tr>
-                  <td>Installment-II</td>
-                  <td>1,00,000</td>
-                  <td>Prior to the commencement of Term 3</td>
+                  <td>Instalment 2</td>
+                  <td>INR 1,25,000</td>
+                  <td>By 15th Jan 2027</td>
                 </tr>
               </tbody>
             </table>
