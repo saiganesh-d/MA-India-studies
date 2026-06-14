@@ -73,12 +73,18 @@
       width: 100%;
       background: transparent;
       border-bottom: none;
-      padding: 24px 0 10px;
+      padding: 42px 0 10px;
       z-index: 100;
     }
 
+    .header-section .container {
+      max-width: 100%;
+      padding-left: clamp(42px, 5.2vw, 100px);
+      padding-right: clamp(42px, 5.2vw, 100px);
+    }
+
     .header-logo-img {
-      height: 88px;
+      height: clamp(96px, 7.2vw, 138px);
       width: auto;
       object-fit: contain;
       display: block;
@@ -86,28 +92,34 @@
 
     .header-logo-divider {
       width: 1px;
-      height: 68px;
+      height: clamp(86px, 6.8vw, 132px);
       background: #ddd;
-      margin: 0 22px;
+      margin: 0 clamp(24px, 2.3vw, 44px);
       flex-shrink: 0;
     }
 
     .logo-flex-container {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     @media (max-width: 768px) {
       .logo-flex-container {
         justify-content: center;
         gap: 15px;
+        flex-wrap: wrap;
       }
 
       .header-section {
         position: relative;
         background: #fff;
         padding: 14px 0;
+      }
+
+      .header-section .container {
+        padding-left: 16px;
+        padding-right: 16px;
       }
 
       .header-logo-img {
@@ -138,7 +150,7 @@
       position: relative;
       overflow: hidden;
       background: linear-gradient(93deg, #ffffff 3%, #fffcde 100%);
-      padding-top: 110px;
+      padding-top: 122px;
       /* Space for the floating absolute header */
     }
 
@@ -152,15 +164,15 @@
       content: '';
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: clamp(66px, 5.4vw, 106px);
       width: 100%;
-      height: 80%;
+      height: 82%;
       /* Height adjusted to make the monuments clearly visible and low */
       background: url('Assets/Assets/Hero section/hero image.png') no-repeat;
-      background-size: cover;
-      background-position: 30% bottom;
+      background-size: 100% auto;
+      background-position: center bottom;
       /* Perfectly centered horizontally to align Taj Mahal and temple gopuram */
-      opacity: 0.85;
+      opacity: 1;
       /* Significantly increased opacity for clear monument visibility */
       z-index: 1;
       pointer-events: none;
@@ -170,7 +182,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.15) 30%, transparent 60%);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.10) 28%, transparent 48%);
       z-index: 2;
       pointer-events: none;
     }
@@ -182,53 +194,54 @@
       display: flex;
       align-items: stretch;
       min-height: 520px;
-      padding: 20px 60px 24px;
-      gap: 28px;
+      padding: 20px clamp(42px, 6.2vw, 118px) 24px clamp(42px, 5.2vw, 100px);
+      gap: 36px;
     }
 
     .hero-text-col {
-      flex: 0 0 60%;
-      max-width: 60%;
+      flex: 1 1 auto;
+      max-width: none;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding-top: 30px;
+      padding-top: 66px;
     }
 
     .hero-form-col {
-      flex: 0 0 34%;
-      max-width: 34%;
+      flex: 0 0 clamp(430px, 26.5vw, 504px);
+      max-width: clamp(430px, 26.5vw, 504px);
       z-index: 2;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      padding-top: 16px;
     }
 
     /* Hero text */
     .hero-pretitle {
       font-family: 'Merriweather', serif;
-      font-size: clamp(16px, 1.8vw, 22px);
+      font-size: clamp(17px, 1.6vw, 32px);
       font-weight: 400;
       font-style: normal;
       color: #1e1e1e;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       line-height: 1.4;
     }
 
     .hero-ma {
-      font-size: clamp(30px, 3.6vw, 46px);
+      font-size: clamp(40px, 4.1vw, 78px);
       font-weight: 900;
       color: #000000;
       line-height: 1;
       margin-bottom: 0px;
-      letter-spacing: -1px;
+      letter-spacing: 0;
     }
 
     .hero-title {
-      font-size: clamp(38px, 4.6vw, 58px);
+      font-size: clamp(44px, 4vw, 76px);
       font-weight: 900;
       line-height: 1;
-      margin-bottom: 22px;
-      letter-spacing: -1.5px;
+      margin-bottom: clamp(34px, 4vw, 76px);
+      letter-spacing: 0;
     }
 
     .text-navy {
@@ -236,7 +249,7 @@
     }
 
     .text-gradient-studies {
-      background: linear-gradient(90deg, #6A0DAD 0%, #00B4D8 100%);
+      background: linear-gradient(90deg, #0D1B73 0%, #6A0DAD 32%, #00C2CB 73%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -250,12 +263,12 @@
     }
 
     .hero-tagline {
-      font-size: clamp(13px, 1.4vw, 17px);
+      font-size: clamp(14px, 1.35vw, 26px);
       font-weight: 800;
       color: #1a1a1a;
       letter-spacing: 0.5px;
       text-transform: uppercase;
-      margin-bottom: 36px;
+      margin-bottom: 30px;
     }
 
     .wavy-underline {
@@ -269,21 +282,31 @@
     .btn-cta {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
+      justify-content: space-between;
+      gap: 24px;
+      min-width: clamp(230px, 18vw, 346px);
+      min-height: clamp(50px, 3.8vw, 72px);
       background: linear-gradient(90deg, #0b1354 0%, #581c87 50%, #0093b7 100%);
       color: #ffffff;
       font-weight: 800;
-      font-size: 15px;
-      padding: 16px 48px;
-      border-radius: 40px;
+      font-size: clamp(15px, 1.4vw, 27px);
+      padding: 0 clamp(18px, 1.45vw, 28px);
+      border-radius: 12px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       border: none;
       cursor: pointer;
       transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
       text-decoration: none;
       align-self: flex-start;
-      box-shadow: 0 8px 24px rgba(11, 19, 84, 0.3);
+      box-shadow: 0 18px 34px rgba(11, 19, 84, 0.24);
+      line-height: 1;
+    }
+
+    .btn-cta-arrow {
+      font-size: 1.35em;
+      font-weight: 500;
+      line-height: 1;
     }
 
     .btn-cta:hover {
@@ -297,9 +320,10 @@
     .enquire-hero-card {
       background: linear-gradient(135deg, #0b1354 0%, #581c87 60%, #0093b7 100%);
       border-radius: 24px;
-      padding: 36px 32px 30px;
+      padding: 30px 32px 26px;
       box-shadow: 0 12px 40px rgba(11, 19, 84, 0.4);
       width: 100%;
+      min-height: clamp(500px, 31vw, 610px);
     }
 
     .enquire-hero-title {
@@ -464,7 +488,7 @@
     }
 
     .who-title {
-      font-size: clamp(28px, 4vw, 46px);
+      font-size: clamp(34px, 5vw, 58px);
       font-weight: 800;
       color: #0d1b73;
       text-align: center;
@@ -474,11 +498,15 @@
     .who-card {
       background: #0D1B73;
       border-radius: 20px;
-      padding: 26px 14px 20px;
-      text-align: center;
+      padding: 24px 20px;
+      text-align: left;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       height: 100%;
+      min-height: 225px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       color: #fff;
     }
 
@@ -490,10 +518,10 @@
     .who-icon {
       width: 64px;
       height: 64px;
-      margin: 0 auto 14px;
+      margin: 0 0 14px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     .who-icon img {
@@ -504,11 +532,13 @@
     }
 
     .who-card h6 {
-      font-size: 13px;
+      font-size: 16px;
       font-weight: 700;
       color: #A8B4FF;
       margin-bottom: 0;
-      line-height: 1.4;
+      margin-top: auto;
+      line-height: 1.45;
+      text-align: left;
     }
 
     /* ================================================
@@ -591,7 +621,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background: linear-gradient(135deg, #1A0D6B 0%, #00B4D8 100%);
+      background: linear-gradient(90deg, #0D1B73 0%, #6A0DAD 50%, #00C2CB 100%);
       padding: 22px 24px;
       border-radius: 20px;
       color: #ffffff;
@@ -616,12 +646,15 @@
     }
 
     .cta-tile-arrow {
-      align-self: flex-end;
-      font-size: 24px;
+      align-self: flex-start;
+      font-size: 26px;
       font-weight: 700;
       line-height: 1;
       color: #ffffff;
       margin-top: auto;
+      display: inline-block;
+      transform: scaleX(1.9);
+      transform-origin: left center;
     }
 
     /* ================================================
@@ -1028,32 +1061,20 @@
     }
 
     .case-studies-section .container {
-      max-width: 1200px;
-      /* Constrain max-width to match Figma compact grid */
+      max-width: 1320px;
+      /* Wider grid so each case-study box is bigger */
     }
 
     .case-studies-title {
-      font-size: clamp(28px, 4vw, 40px);
+      font-size: clamp(34px, 5vw, 58px);
       font-weight: 800;
-      color: #0d1b73;
       text-align: center;
-      margin-bottom: 16px;
-      position: relative;
-      display: inline-block;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .case-studies-title::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      width: 100%;
-      height: 4px;
-      background: #0d1b73;
-      /* Solid navy blue underline */
-      border-radius: 2px;
+      margin-bottom: 56px;
+      /* Case Studies main heading — own gradient, kept separate from card headings */
+      background: linear-gradient(90deg, #0D1B73 0%, #6A0DAD 50%, #00C2CB 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .case-sub {
@@ -1072,8 +1093,8 @@
       /* Premium smooth corners */
       padding: 20px;
       /* Soft padding surrounding elements */
-      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
-      /* Increased robust box shadow */
+      box-shadow: 0 18px 44px rgba(13, 27, 115, 0.16);
+      /* Prominent soft drop shadow per box */
       display: flex;
       flex-direction: row-reverse;
       /* Image on right, text on left as in Figma */
@@ -1093,10 +1114,10 @@
     }
 
     .case-card-img {
-      flex: 0 0 42%;
-      max-width: 42%;
-      aspect-ratio: 3 / 4;
-      /* Enforce a beautiful tall vertical portrait format as in Figma */
+      flex: 0 0 44%;
+      max-width: 44%;
+      align-self: stretch;
+      /* Image fills the full height of the card, matching the text column */
       border-radius: 18px;
       /* Elegant rounded image frame */
       overflow: hidden;
@@ -1119,18 +1140,29 @@
     }
 
     .case-card-title {
-      font-size: clamp(16px, 1.8vw, 19px);
+      font-size: clamp(19px, 2.1vw, 26px);
       font-weight: 800;
       /* Extra bold text */
       color: #0d1b73;
-      margin-bottom: 12px;
-      line-height: 1.35;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    /* Card-heading accent gradient — scoped to case cards, independent of the
+       main "Case Studies" title gradient and of global .text-purple/.text-cyan */
+    .case-card-title .text-purple,
+    .case-card-title .text-cyan {
+      background: linear-gradient(90deg, #0D1B73 0%, #6A0DAD 50%, #00C2CB 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
     }
 
     .case-excerpt {
-      font-size: 13px;
-      color: #4b5563;
-      line-height: 1.65;
+      font-size: 14px;
+      color: #000;
+      line-height: 1.7;
       margin-bottom: 20px;
       font-weight: 500;
     }
@@ -1218,7 +1250,7 @@
     .elig-tabs {
       border-bottom: none !important;
       border-radius: 100px;
-      padding: 6px !important;
+      padding: 9px !important;
       border: 1px solid rgba(255, 255, 255, 0.4) !important;
       background: linear-gradient(90deg, #00C2CB 0%, #6A0DAD 50%, #0D1B73 100%) !important;
       backdrop-filter: blur(10px);
@@ -1229,9 +1261,9 @@
       margin-left: auto !important;
       margin-right: auto !important;
       margin-bottom: 50px !important;
-      padding-left: 6px !important;
-      padding-right: 6px !important;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      padding-left: 9px !important;
+      padding-right: 9px !important;
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18);
     }
 
     .elig-tabs .nav-item {
@@ -1242,10 +1274,10 @@
     .elig-tabs .nav-link {
       color: rgba(255, 255, 255, 0.85) !important;
       font-weight: 600;
-      font-size: 16.5px;
+      font-size: 20px;
       border-radius: 100px !important;
       border: none !important;
-      padding: 16px 40px !important;
+      padding: 24px 58px !important;
       background: transparent !important;
       transition: all 0.3s ease;
       text-align: center;
@@ -1480,7 +1512,8 @@
     .sc-slider-wrap {
       overflow: hidden;
       width: 100%;
-      padding: 10px 0;
+      /* extra top/left room so the corner-pinned badge can overhang outside the card without being clipped */
+      padding: 48px 0 12px 44px;
     }
 
     .test-grid {
@@ -1493,7 +1526,7 @@
       position: relative;
       flex: 0 0 360px;
       width: 360px;
-      height: 530px;
+      min-height: 530px;
       background: #ffffff;
       border-radius: 20px;
       padding: 24px 20px;
@@ -1502,7 +1535,7 @@
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      overflow: hidden;
+      overflow: visible;
       box-sizing: border-box;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -1517,17 +1550,69 @@
       box-shadow: 0 20px 48px rgba(0, 194, 203, 0.12);
     }
 
+    /* 2nd card (Koji Sato) has the most text — slightly smaller font */
+    .test-card.featured .test-text {
+      font-size: 11px;
+    }
+
+    /* Mirrored navy quote pinned at the bottom-right (no circle) */
+    .test-card::after {
+      content: "";
+      position: absolute;
+      bottom: 16px;
+      right: 18px;
+      width: 58px;
+      height: 58px;
+      background-color: #0D1B73;
+      -webkit-mask: url('ase.png') center / contain no-repeat;
+      mask: url('ase.png') center / contain no-repeat;
+      transform: rotate(180deg);
+      opacity: 0.9;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Top-left header row: badge + name/role */
+    .test-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+      /* clear the corner badge whose visible quarter sits at the card's top-left */
+      padding-left: 34px;
+      min-height: 44px;
+    }
+
+    .test-head-info {
+      flex: 1;
+      min-width: 0;
+      text-align: left;
+    }
+
+    /* Badge centered on the card's top-left corner: only its bottom-right
+       quarter is inside, the rest overhangs outside like a pin */
     .test-avatar {
-      width: 72px;
-      height: 72px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      width: 76px;
+      height: 76px;
       border-radius: 50%;
-      background: #00C2CB;
+      background: linear-gradient(135deg, #00C2CB 0%, #6A0DAD 100%);
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 12px auto;
-      box-shadow: 0 6px 16px rgba(0, 194, 203, 0.2);
+      margin: 0;
+      box-shadow: 0 8px 18px rgba(106, 13, 173, 0.22);
       flex-shrink: 0;
+    }
+
+    .test-avatar img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
     }
 
     .avatar-svg {
@@ -1538,10 +1623,10 @@
     }
 
     .test-name {
-      font-size: 18px;
+      font-size: 19px;
       font-weight: 700;
       color: #0b1354;
-      text-align: center;
+      text-align: left;
       margin-bottom: 4px;
       font-family: 'Montserrat', sans-serif;
     }
@@ -1550,8 +1635,8 @@
       font-size: 12px;
       font-weight: 600;
       color: #00C2CB;
-      text-align: center;
-      margin-bottom: 12px;
+      text-align: left;
+      margin-bottom: 0;
       font-style: italic;
       line-height: 1.4;
       font-family: 'Montserrat', sans-serif;
@@ -1559,16 +1644,18 @@
     }
 
     .test-text {
-      font-size: 13px;
-      color: #444444;
+      font-size: 12px;
+      color: #0d1b73;
       line-height: 1.7;
       font-weight: 500;
       text-align: left;
       margin-top: 4px;
       font-family: 'Montserrat', sans-serif;
       flex-grow: 1;
-      overflow-y: auto;
+      overflow: visible;
       padding-right: 4px;
+      position: relative;
+      z-index: 1;
     }
 
     .test-text::-webkit-scrollbar {
@@ -1615,7 +1702,7 @@
       .test-card {
         flex: 0 0 310px;
         width: 310px;
-        height: 500px;
+        min-height: 500px;
         padding: 20px 16px;
       }
 
@@ -1645,7 +1732,7 @@
       .test-card {
         flex: 0 0 100%;
         width: 100%;
-        height: 480px;
+        min-height: 480px;
         padding: 24px 20px;
       }
 
@@ -1990,6 +2077,10 @@
        RESPONSIVE
     ================================================ */
     @media (max-width: 1024px) {
+      .header-section {
+        padding-top: 28px;
+      }
+
       .hero-inner {
         padding: 28px 28px 28px;
       }
@@ -1997,11 +2088,13 @@
       .hero-text-col {
         flex: 0 0 52%;
         max-width: 52%;
+        padding-top: 38px;
       }
 
       .hero-form-col {
         flex: 0 0 46%;
         max-width: 46%;
+        padding-top: 20px;
       }
 
       .faculty-card {
@@ -2027,10 +2120,20 @@
         max-width: 100%;
       }
 
+      .hero-form-col {
+        padding-top: 0;
+      }
+
+      .hero-text-col {
+        padding-top: 0;
+      }
+
       .hero-section::before {
+        bottom: 0;
         height: 70%;
         background-position: 30% bottom;
-        opacity: 0.45;
+        background-size: cover;
+        opacity: 0.60;
       }
 
       .hero-section::after {
@@ -2039,6 +2142,12 @@
 
       .hero-pretitle {
         font-size: 14px;
+      }
+
+      .btn-cta {
+        justify-content: center;
+        min-width: min(100%, 260px);
+        min-height: 52px;
       }
 
       .info-tile-label {
@@ -2305,12 +2414,12 @@
         <div class="hero-text-col">
           <p class="hero-pretitle">Journey into the Heart of India with the</p>
           <p class="hero-ma">M.A. in</p>
-          <h1 class="hero-title"><span class="text-navy">India</span> <span class="text-gradient-studies">Studies</span>
+          <h1 class="hero-title"><span class="text-gradient-studies">India Studies</span>
           </h1>
           <p class="hero-tagline"><span class="wavy-underline">UNDERSTAND INDIA.</span> ENGAGE THE WORLD.</p>
           <button type="button"
             class="npfWidgetButton btn-cta npfWidget-bae1d2d655e51a49493da51c036da124">ENROLL NOW
-            &nbsp;&nbsp;&rarr;</button>
+            <span class="btn-cta-arrow" aria-hidden="true">&rarr;</span></button>
         </div>
 
         <!-- Right: Enquire Form -->
@@ -2338,8 +2447,8 @@
           <span class="info-tile-value">September 2026</span>
         </div>
         <div class="info-tile">
-          <span class="info-tile-label">Programme</span>
-          <span class="info-tile-value">100% Online</span>
+          <span class="info-tile-label">100%</span>
+          <span class="info-tile-value">Online</span>
         </div>
         <div class="info-tile">
           <span class="info-tile-value">Easy EMI</span>
@@ -2436,7 +2545,7 @@
 ══════════════════════════════════════════ -->
   <section class="who-section section-global py-5">
     <div class="container">
-      <h2 class="who-title">Who Should <span class="text-gradient">Apply?</span></h2>
+      <h2 class="who-title"><span class="text-gradient">Who Should Apply?</span></h2>
       <div class="row g-4 justify-content-center mt-2">
 
         <div class="col-lg-2 col-md-4 col-6">
@@ -2844,15 +2953,15 @@
 
               <!-- Card 1: Vinay Chawla -->
               <div class="test-card">
-                <div class="test-avatar">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg">
-                    <circle cx="12" cy="8" r="4.5" />
-                    <path d="M5.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" />
-                  </svg>
+                <div class="test-head">
+                  <div class="test-avatar">
+                    <img src="ase.png" class="test-quote-img" alt="Quote">
+                  </div>
+                  <div class="test-head-info">
+                    <p class="test-name">Vinay Chawla</p>
+                    <p class="test-role">Founder, Asian Centre For<br>Development Engineering</p>
+                  </div>
                 </div>
-                <p class="test-name">Vinay Chawla</p>
-                <p class="test-role">Founder, Asian Centre For<br>Development Engineering</p>
                 <div class="test-text">
                   "I joined the first batch of the M.A. in India Studies at O.P. Jindal Global University after
                   exploring many options in India that could support my social start-up in development engineering. This
@@ -2871,15 +2980,15 @@
 
               <!-- Card 2: Koji Sato -->
               <div class="test-card featured">
-                <div class="test-avatar">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg">
-                    <circle cx="12" cy="8" r="4.5" />
-                    <path d="M5.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" />
-                  </svg>
+                <div class="test-head">
+                  <div class="test-avatar">
+                    <img src="ase.png" class="test-quote-img" alt="Quote">
+                  </div>
+                  <div class="test-head-info">
+                    <p class="test-name">Koji Sato</p>
+                    <p class="test-role">Director General, The Japan<br>Foundation, New Delhi Office</p>
+                  </div>
                 </div>
-                <p class="test-name">Koji Sato</p>
-                <p class="test-role">Director General, The Japan<br>Foundation, New Delhi Office</p>
                 <div class="test-text">
                   "I have been associated with India for a long time and I am currently living and working in Delhi.
                   With more than eight years of experience here, I felt I knew India well...but I wanted to deepen my
@@ -2901,15 +3010,15 @@
 
               <!-- Card 3: Rajni P. -->
               <div class="test-card">
-                <div class="test-avatar">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg">
-                    <circle cx="12" cy="8" r="4.5" />
-                    <path d="M5.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" />
-                  </svg>
+                <div class="test-head">
+                  <div class="test-avatar">
+                    <img src="ase.png" class="test-quote-img" alt="Quote">
+                  </div>
+                  <div class="test-head-info">
+                    <p class="test-name">Rajni P.</p>
+                    <p class="test-role">Student, O.P. Jindal Global University</p>
+                  </div>
                 </div>
-                <p class="test-name">Rajni P.</p>
-                <p class="test-role">Student, O.P. Jindal Global University</p>
                 <div class="test-text">
                   "The M.A. in India Studies programme at the O.P. Jindal Global University has been such a unique and
                   eye-opening experience for me. I joined the programme wanting to learn more about India's history,
@@ -2927,15 +3036,15 @@
 
               <!-- Card 4: Muiris Ó Cléidigh -->
               <div class="test-card">
-                <div class="test-avatar">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg">
-                    <circle cx="12" cy="8" r="4.5" />
-                    <path d="M5.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" />
-                  </svg>
+                <div class="test-head">
+                  <div class="test-avatar">
+                    <img src="ase.png" class="test-quote-img" alt="Quote">
+                  </div>
+                  <div class="test-head-info">
+                    <p class="test-name">Muiris Ó Cléidigh</p>
+                    <p class="test-role">Policy Analyst, European Union</p>
+                  </div>
                 </div>
-                <p class="test-name">Muiris Ó Cléidigh</p>
-                <p class="test-role">Policy Analyst, European Union</p>
                 <div class="test-text">
                   "As someone who works on South Asia policy, this programme was invaluable. The faculty brought
                   nuanced, real-world perspectives that went far beyond textbook knowledge, and the peer discussions
@@ -2949,15 +3058,15 @@
 
               <!-- Card 5: Michael Barnaby Levin -->
               <div class="test-card">
-                <div class="test-avatar">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg">
-                    <circle cx="12" cy="8" r="4.5" />
-                    <path d="M5.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" />
-                  </svg>
+                <div class="test-head">
+                  <div class="test-avatar">
+                    <img src="ase.png" class="test-quote-img" alt="Quote">
+                  </div>
+                  <div class="test-head-info">
+                    <p class="test-name">Michael Barnaby Levin</p>
+                    <p class="test-role">Higher Education Analyst, Senior Advisor</p>
+                  </div>
                 </div>
-                <p class="test-name">Michael Barnaby Levin</p>
-                <p class="test-role">Higher Education Analyst, Senior Advisor</p>
                 <div class="test-text">
                   "I am confident that the M.A. in India Studies at JGU is among the most comprehensive and
                   well-designed programmes for anyone seeking to truly understand India — its past, its present, and its
