@@ -73,22 +73,26 @@
       width: 100%;
       background: transparent;
       border-bottom: none;
-      padding: 24px 0 10px;
+      padding: 28px 0 14px;
       z-index: 100;
     }
 
     .header-logo-img {
-      height: 88px;
+      height: 105px;
       width: auto;
       object-fit: contain;
       display: block;
     }
 
+    .logo-flex-container img:last-of-type {
+      height: 84px;
+    }
+
     .header-logo-divider {
       width: 1px;
-      height: 68px;
+      height: 80px;
       background: #ddd;
-      margin: 0 22px;
+      margin: 0 24px;
       flex-shrink: 0;
     }
 
@@ -114,8 +118,12 @@
         height: 60px;
       }
 
+      .logo-flex-container img:last-of-type {
+        height: 52px;
+      }
+
       .header-logo-divider {
-        height: 48px;
+        height: 50px;
         margin: 0 14px;
       }
     }
@@ -123,6 +131,10 @@
     @media (max-width: 480px) {
       .header-logo-img {
         height: 48px;
+      }
+
+      .logo-flex-container img:last-of-type {
+        height: 42px;
       }
 
       .header-logo-divider {
@@ -138,8 +150,7 @@
       position: relative;
       overflow: hidden;
       background: linear-gradient(93deg, #ffffff 3%, #fffcde 100%);
-      padding-top: 110px;
-      /* Space for the floating absolute header */
+      padding-top: 148px;
     }
 
     @media (max-width: 768px) {
@@ -152,16 +163,13 @@
       content: '';
       position: absolute;
       left: 0;
-      bottom: 0;
+      top: 0;
       width: 100%;
-      height: 80%;
-      /* Height adjusted to make the monuments clearly visible and low */
+      height: 100%;
       background: url('Assets/Assets/Hero section/hero image.png') no-repeat;
       background-size: cover;
-      background-position: 30% bottom;
-      /* Perfectly centered horizontally to align Taj Mahal and temple gopuram */
-      opacity: 0.85;
-      /* Significantly increased opacity for clear monument visibility */
+      background-position: center bottom;
+      opacity: 0.90;
       z-index: 1;
       pointer-events: none;
     }
@@ -170,7 +178,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.15) 30%, transparent 60%);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 40%, transparent 65%);
       z-index: 2;
       pointer-events: none;
     }
@@ -206,7 +214,7 @@
     /* Hero text */
     .hero-pretitle {
       font-family: 'Merriweather', serif;
-      font-size: clamp(16px, 1.8vw, 22px);
+      font-size: clamp(17px, 1.9vw, 26px);
       font-weight: 400;
       font-style: normal;
       color: #1e1e1e;
@@ -215,7 +223,7 @@
     }
 
     .hero-ma {
-      font-size: clamp(30px, 3.6vw, 46px);
+      font-size: clamp(42px, 4.5vw, 64px);
       font-weight: 900;
       color: #000000;
       line-height: 1;
@@ -224,7 +232,7 @@
     }
 
     .hero-title {
-      font-size: clamp(38px, 4.6vw, 58px);
+      font-size: clamp(46px, 5vw, 72px);
       font-weight: 900;
       line-height: 1;
       margin-bottom: 22px;
@@ -250,7 +258,7 @@
     }
 
     .hero-tagline {
-      font-size: clamp(13px, 1.4vw, 17px);
+      font-size: clamp(14px, 1.55vw, 22px);
       font-weight: 800;
       color: #1a1a1a;
       letter-spacing: 0.5px;
@@ -1006,22 +1014,6 @@
        CASE STUDIES
     ================================================ */
     .case-studies-section {
-      padding: 70px 0;
-      background: #fafafa;
-    }
-
-    .case-studies-title {
-      font-size: clamp(24px, 4vw, 38px);
-      font-weight: 800;
-      color: #0d1b73;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    /* ================================================
-       CASE STUDIES
-    ================================================ */
-    .case-studies-section {
       padding: 80px 0;
       background: #FFFDF0;
       /* Solid soft premium ivory background */
@@ -1033,27 +1025,16 @@
     }
 
     .case-studies-title {
-      font-size: clamp(28px, 4vw, 40px);
+      font-size: clamp(32px, 4.2vw, 52px);
       font-weight: 800;
-      color: #0d1b73;
+      background: linear-gradient(90deg, #0D1B73 0%, #6A0DAD 50%, #00C2CB 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
       text-align: center;
-      margin-bottom: 16px;
-      position: relative;
-      display: inline-block;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .case-studies-title::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      width: 100%;
-      height: 4px;
-      background: #0d1b73;
-      /* Solid navy blue underline */
-      border-radius: 2px;
+      margin-bottom: 40px;
+      display: block;
     }
 
     .case-sub {
@@ -1069,18 +1050,13 @@
     .case-card {
       background: #fff;
       border-radius: 24px;
-      /* Premium smooth corners */
       padding: 20px;
-      /* Soft padding surrounding elements */
       box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
-      /* Increased robust box shadow */
       display: flex;
       flex-direction: row-reverse;
-      /* Image on right, text on left as in Figma */
-      gap: 24px;
-      /* Space between image and text content */
+      gap: 20px;
       height: 100%;
-      min-height: 240px;
+      align-items: stretch;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       border: 1px solid rgba(0, 0, 0, 0.06);
     }
@@ -1093,12 +1069,10 @@
     }
 
     .case-card-img {
-      flex: 0 0 42%;
-      max-width: 42%;
-      aspect-ratio: 3 / 4;
-      /* Enforce a beautiful tall vertical portrait format as in Figma */
+      flex: 0 0 40%;
+      max-width: 40%;
+      aspect-ratio: 350 / 384;
       border-radius: 18px;
-      /* Elegant rounded image frame */
       overflow: hidden;
     }
 
@@ -2028,8 +2002,8 @@
       }
 
       .hero-section::before {
-        height: 70%;
-        background-position: 30% bottom;
+        height: 100%;
+        background-position: center bottom;
         opacity: 0.45;
       }
 
@@ -2338,7 +2312,6 @@
           <span class="info-tile-value">September 2026</span>
         </div>
         <div class="info-tile">
-          <span class="info-tile-label">Programme</span>
           <span class="info-tile-value">100% Online</span>
         </div>
         <div class="info-tile">
