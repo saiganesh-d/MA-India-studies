@@ -1503,8 +1503,9 @@
     .sc-slider-wrap {
       overflow: hidden;
       width: 100%;
-      /* extra top/left room so the corner-pinned badge can overhang outside the card without being clipped */
-      padding: 48px 0 12px 44px;
+      /* room on all sides so the corner-pinned badge (top-left) and quote
+         (bottom-right) can overhang outside the cards without being clipped */
+      padding: 48px 44px 44px 44px;
     }
 
     .test-grid {
@@ -1546,18 +1547,20 @@
       font-size: 11px;
     }
 
-    /* Mirrored navy quote pinned at the bottom-right (no circle) */
+    /* Mirrored navy quote pinned on the bottom-right corner — mirrors the
+       top-left .test-avatar: center on the corner, only its top-left quarter
+       (25%) sits inside, the rest overhangs outside like a pin */
     .test-card::after {
       content: "";
       position: absolute;
-      bottom: 16px;
-      right: 18px;
+      bottom: 0;
+      right: 0;
       width: 58px;
       height: 58px;
       background-color: #0D1B73;
       -webkit-mask: url('ase.png') center / contain no-repeat;
       mask: url('ase.png') center / contain no-repeat;
-      transform: rotate(180deg);
+      transform: translate(50%, 50%) rotate(180deg);
       opacity: 0.9;
       pointer-events: none;
       z-index: 0;
