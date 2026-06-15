@@ -1505,7 +1505,7 @@
       width: 100%;
       /* room on all sides so the corner-pinned badge (top-left) and quote
          (bottom-right) can overhang outside the cards without being clipped */
-      padding: 48px 44px 44px 44px;
+      padding: 48px 12px 44px 44px;
     }
 
     .test-grid {
@@ -1554,13 +1554,13 @@
       content: "";
       position: absolute;
       bottom: 0;
-      right: 0;
+      right: 10px;
       width: 58px;
       height: 58px;
       background-color: #0D1B73;
       -webkit-mask: url('ase.png') center / contain no-repeat;
       mask: url('ase.png') center / contain no-repeat;
-      transform: translate(50%, 50%) rotate(180deg);
+      transform: translateY(50%) rotate(180deg);
       opacity: 0.9;
       pointer-events: none;
       z-index: 0;
