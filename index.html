@@ -184,8 +184,8 @@
       background-size: cover;
       background-position: 30% bottom;
       /* Perfectly centered horizontally to align Taj Mahal and temple gopuram */
-      opacity: 0.85;
-      /* Significantly increased opacity for clear monument visibility */
+      opacity: 1;
+      /* Full opacity so the monument backdrop reads at full strength */
       z-index: 1;
       pointer-events: none;
     }
@@ -194,7 +194,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.15) 30%, transparent 60%);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.08) 30%, transparent 55%);
       z-index: 2;
       pointer-events: none;
     }
@@ -215,8 +215,8 @@
       max-width: none;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      padding-top: 66px;
+      justify-content: center;
+      padding-top: 0;
     }
 
     .hero-form-col {
@@ -252,7 +252,7 @@
       font-size: clamp(38px, 4.6vw, 58px);
       font-weight: 900;
       line-height: 1;
-      margin-bottom: clamp(34px, 4vw, 76px);
+      margin-bottom: clamp(20px, 2.2vw, 34px);
       letter-spacing: 0;
     }
 
