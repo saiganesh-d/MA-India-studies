@@ -84,21 +84,21 @@
     }
 
     .header-logo-img {
-      height: 88px;
+      height: 108px;
       width: auto;
       object-fit: contain;
       display: block;
     }
 
     .logo-flex-container img:last-of-type {
-      height: 84px;
+      height: 102px;
     }
 
     .header-logo-divider {
       width: 1px;
       height: 68px;
       background: #ddd;
-      margin: 0 22px;
+      margin: 0 10px;
       flex-shrink: 0;
     }
 
@@ -300,10 +300,10 @@
       min-height: clamp(50px, 3.8vw, 72px);
       background: linear-gradient(90deg, #0b1354 0%, #581c87 50%, #0093b7 100%);
       color: #ffffff;
-      font-weight: 800;
+      font-weight: 600;
       font-size: clamp(15px, 1.4vw, 27px);
       padding: 0 clamp(18px, 1.45vw, 28px);
-      border-radius: 12px;
+      border-radius: 18px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       border: none;
@@ -576,7 +576,7 @@
 
     .about-prog-body {
       font-size: 17px;
-      color: #4b5563;
+      color: #000;
       /* Clean professional grey */
       line-height: 1.9;
       margin-bottom: 24px;
@@ -585,7 +585,7 @@
     }
 
     .about-prog-body strong {
-      color: #0d1b73;
+      color: #000;
       /* Rich dark navy blue for high-contrast branding */
       font-weight: 700;
     }
@@ -949,7 +949,7 @@
       font-size: clamp(32px, 4.6vw, 52px);
       font-weight: 800;
       color: #0d1b73;
-      margin-bottom: 10px;
+      margin-bottom: 56px;
     }
 
     .faculty-subtitle {
@@ -1062,27 +1062,15 @@
     }
 
     .case-studies-title {
-      font-size: clamp(28px, 4vw, 40px);
+      font-size: clamp(34px, 5vw, 58px);
       font-weight: 800;
-      color: #0d1b73;
       text-align: center;
-      margin-bottom: 16px;
-      position: relative;
-      display: inline-block;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .case-studies-title::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      width: 100%;
-      height: 4px;
-      background: #0d1b73;
-      /* Solid navy blue underline */
-      border-radius: 2px;
+      /* gap between the Case Studies title and the boxes below */
+      margin-bottom: 56px;
+      background: linear-gradient(90deg, #0D1B73 0%, #6A0DAD 50%, #00C2CB 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .case-sub {
@@ -2398,7 +2386,7 @@
       <div class="logo-flex-container">
         <img src="logo.png" class="header-logo-img" alt="O.P. Jindal Global University" />
         <div class="header-logo-divider d-none d-md-block"></div>
-        <img src="logo2-3.png" class="header-logo-img me-3 me-sm-4" alt="Jindal India Institute" />
+        <img src="logo-2.png" class="header-logo-img me-3 me-sm-4" alt="Jindal India Institute" />
         <!-- <img src="logo-2-2.png" class="header-logo-img" alt="Jindal India Institute Logo" /> -->
       </div>
     </div>
@@ -2755,7 +2743,7 @@
             <div class="case-card-img"><img src="Assets/Assets/Case studies/Rectangle 249.png"
                 alt="Cultural Heritage" /></div>
             <div class="case-body">
-              <h3 class="case-card-title">Cultural <span class="text-purple">Heritage</span> and Soft Power</h3>
+              <h3 class="case-card-title">Cultural <span class="text-purple">Heritage</span><br>and Soft Power</h3>
               <p class="case-excerpt">This case study looks at how the arts function as a core component of cultural
                 strength and national prosperity. India's rich musical traditions give the country a unique opportunity
                 to project its intangible heritage at home and abroad. The study considers how public-private
