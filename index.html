@@ -3350,7 +3350,11 @@
         if (!facultyGrid || !facultyCards.length) return;
         const gap = parseFloat(window.getComputedStyle(facultyGrid).gap) || 0;
         const w = facultyCards[0].offsetWidth + gap;
-        facultyGrid.style.transform = 'translateX(-' + (fIdx * w) + 'px)';
+        // Clamp the shift so the grid never scrolls past its last card
+        // (otherwise the final step overshoots and shows an empty gap on the right)
+        const maxShift = Math.max(0, facultyGrid.scrollWidth - facultyGrid.parentElement.clientWidth);
+        const shift = Math.min(fIdx * w, maxShift);
+        facultyGrid.style.transform = 'translateX(-' + shift + 'px)';
       }
 
       if (prevBtn) {
