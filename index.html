@@ -1296,7 +1296,7 @@
     }
 
     .elig-section-title {
-      font-size: 32px;
+      font-size: clamp(18px, 4.5vw, 32px);
       font-weight: 700;
       color: #ffffff !important;
       margin-top: 0;
@@ -2142,16 +2142,30 @@
         min-height: 52px;
       }
 
+      .hero-info-bar {
+        flex-wrap: wrap;
+      }
+
+      .info-tile {
+        flex: 0 0 50%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 18px 6px;
+      }
+
+      .info-tile:nth-child(odd) {
+        border-right: 1px solid rgba(255, 255, 255, 0.22);
+      }
+
+      .info-tile:nth-child(even) {
+        border-right: none;
+      }
+
       .info-tile-label {
         font-size: 9px;
       }
 
       .info-tile-value {
         font-size: 12px;
-      }
-
-      .info-tile {
-        padding: 18px 6px;
       }
 
       /* Increased vertical padding on mobile for spacing */
@@ -2164,6 +2178,28 @@
 
       .slider-wrapper {
         margin: 0 38px;
+      }
+
+      .slider-btn {
+        width: 48px;
+        height: 48px;
+      }
+
+      .faculty-nav-btn {
+        width: 48px;
+        height: 48px;
+      }
+
+      .card-img {
+        width: 100% !important;
+      }
+
+      .jii-overlay-col {
+        padding: 28px 16px !important;
+      }
+
+      .about-prog-body {
+        font-size: 15px;
       }
 
       .slider-item {
@@ -2330,6 +2366,24 @@
 
       .recognitions-title {
         font-size: 26px !important;
+      }
+    }
+
+    @media (max-width: 375px) {
+      .slider-wrapper {
+        margin: 0 16px;
+      }
+
+      .jii-overlay-col {
+        padding: 20px 12px !important;
+      }
+
+      .hero-inner {
+        padding: 20px 14px 32px;
+      }
+
+      .info-tile {
+        flex: 0 0 50%;
       }
     }
   </style>
