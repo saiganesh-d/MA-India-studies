@@ -925,16 +925,42 @@
       flex: 0 0 18%;
     }
 
-    /* When inside mobile carousel */
+    /* When inside mobile carousel — constrain to a readable badge size */
     .owl-carousel .rec-badge,
     .owl-carousel .rec-badge-large,
     .owl-carousel .rec-badge-center {
       flex: none !important;
-      max-width: 90% !important;
-      width: 100% !important;
+      width: 240px !important;
+      max-width: 240px !important;
       margin: 0 auto !important;
       transform: none !important;
       padding: 10px !important;
+      display: block !important;
+    }
+
+    /* Recognitions owl nav arrows */
+    .recognitions-badges .owl-nav button.owl-prev,
+    .recognitions-badges .owl-nav button.owl-next {
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.9) !important;
+      border-radius: 50% !important;
+      color: #0d1b73 !important;
+      font-size: 16px !important;
+      line-height: 36px !important;
+      margin: 0 6px !important;
+    }
+
+    .recognitions-badges .owl-dots {
+      margin-top: 16px;
+    }
+
+    .recognitions-badges .owl-dot span {
+      background: rgba(255,255,255,0.5) !important;
+    }
+
+    .recognitions-badges .owl-dot.active span {
+      background: #ffffff !important;
     }
 
     /* ================================================
@@ -1723,11 +1749,19 @@
         gap: 4px;
       }
 
+      .sc-slider-wrap {
+        padding: 20px 16px;
+        overflow: hidden;
+      }
+
+      .sc-nav-row {
+        padding: 0 4px;
+        margin-top: 16px;
+      }
+
       .test-card {
-        flex: 0 0 100%;
-        width: 100%;
-        min-height: 480px;
-        padding: 24px 20px;
+        min-height: auto;
+        padding: 20px 16px;
       }
 
       .test-avatar {
@@ -3344,16 +3378,15 @@
       let current = 0;
 
       function getVisible() {
-        if (window.innerWidth < 576) return 1;
-        if (window.innerWidth < 768) return 1;
+        if (window.innerWidth <= 768) return 1;
         if (window.innerWidth < 1024) return 2;
         return 3;
       }
 
       function updateSlider() {
         const visibleCount = getVisible();
-        const wrapperWidth = $('.slider-wrapper').width();
-        const itemWidth = wrapperWidth / visibleCount;
+        const wrapperWidth = $('.slider-wrapper').width() || ($(window).width() - 80);
+        const itemWidth = Math.floor(wrapperWidth / visibleCount);
         items.css({ 'min-width': itemWidth + 'px', 'max-width': itemWidth + 'px', 'width': itemWidth + 'px' });
         track.css('transform', 'translateX(-' + (current * itemWidth) + 'px)');
       }
@@ -3369,6 +3402,8 @@
 
       $(window).on('resize', function () { current = 0; updateSlider(); updateFaculty(); updateTest(); updateRecognitions(); });
       updateSlider();
+      /* Re-run after images load so widths are final */
+      $(window).on('load', function () { current = 0; updateSlider(); updateTest(); });
 
       /* ── RECOGNITIONS CAROUSEL FOR MOBILE ── */
       const $reconBadge = $('.recognitions-badges');
@@ -3377,12 +3412,14 @@
           if (!$reconBadge.hasClass('owl-carousel')) {
             $reconBadge.addClass('owl-carousel owl-theme').owlCarousel({
               items: 1,
-              margin: 20,
+              margin: 0,
               loop: true,
-              nav: false,
+              nav: true,
+              navText: ['&#10094;', '&#10095;'],
               dots: true,
               autoplay: true,
-              autoplayTimeout: 3500
+              autoplayTimeout: 3500,
+              center: true
             });
           }
         } else {
@@ -3433,7 +3470,22 @@
 
       function updateTest() {
         if (!testGrid || !testCards.length) return;
-        const gap = parseFloat(window.getComputedStyle(testGrid).gap) || 0;
+        const sliderWrap = document.querySelector('.sc-slider-wrap');
+        if (sliderWrap) {
+          const style = window.getComputedStyle(sliderWrap);
+          const cardWidth = sliderWrap.clientWidth
+            - parseFloat(style.paddingLeft)
+            - parseFloat(style.paddingRight);
+          if (cardWidth > 0) {
+            Array.from(testCards).forEach(function(c) {
+              c.style.flex = '0 0 ' + cardWidth + 'px';
+              c.style.minWidth = cardWidth + 'px';
+              c.style.maxWidth = cardWidth + 'px';
+              c.style.width = cardWidth + 'px';
+            });
+          }
+        }
+        const gap = parseFloat(window.getComputedStyle(testGrid).gap) || 20;
         const w = testCards[0].offsetWidth + gap;
         testGrid.style.transform = 'translateX(-' + (tIdx * w) + 'px)';
       }
