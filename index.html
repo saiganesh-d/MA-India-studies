@@ -49,6 +49,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      overflow-x: hidden;
+    }
+
     body {
       font-family: 'Montserrat', sans-serif;
       color: #333;
@@ -335,7 +339,6 @@
       padding: 30px 32px 26px;
       box-shadow: 0 12px 40px rgba(11, 19, 84, 0.4);
       width: 100%;
-      min-height: clamp(500px, 31vw, 610px);
     }
 
     .enquire-hero-title {
@@ -343,9 +346,62 @@
       font-weight: 800;
       color: #ffffff;
       text-align: center;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       letter-spacing: 1px;
       text-transform: uppercase;
+    }
+
+    .hero-highlights-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+    }
+
+    .hero-highlights-list li {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: clamp(13px, 1.1vw, 15px);
+      font-weight: 500;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.45;
+    }
+
+    .hero-highlights-list li::before {
+      content: "✓";
+      color: #00c2cb;
+      font-weight: 900;
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .hero-highlights-list li:first-child {
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .hero-enquire-btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(90deg, #00b4d8 0%, #0d1b73 100%);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 10px;
+      letter-spacing: 0.5px;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .hero-enquire-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      color: #fff;
     }
 
     .hero-form-input {
@@ -1226,6 +1282,7 @@
       padding: 80px 0;
       overflow: hidden;
       background: #0d1b73;
+      transition: background 0.4s ease;
     }
 
     .elig-bg {
@@ -1308,6 +1365,18 @@
       color: #0d1b73 !important;
       font-weight: 700;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      transform: none;
+    }
+
+    .elig-tabs .nav-link {
+      transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* eligibility mobile padding */
+    @media (max-width: 768px) {
+      .eligibility-section {
+        padding: 48px 0 56px;
+      }
     }
 
     .elig-tab-inner {
@@ -1385,14 +1454,21 @@
       content: none !important;
     }
 
+    .fee-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 28px;
+    }
+
     .fee-table {
       width: 100%;
+      min-width: 460px;
       border-collapse: separate;
       border-spacing: 0;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.2);
       overflow: hidden;
-      margin-top: 28px;
       background: rgba(255, 255, 255, 0.02);
     }
 
@@ -2164,6 +2240,16 @@
         padding-top: 0;
       }
 
+      .enquire-hero-card {
+        min-height: auto;
+        padding: 24px 20px;
+      }
+
+      .hero-highlights-list li {
+        font-size: 13px;
+        padding: 9px 0;
+      }
+
       .hero-section::before {
         height: 70%;
         background-position: 30% bottom;
@@ -2370,11 +2456,17 @@
 
       .enquire-form-container {
         border-radius: 20px;
+        overflow: visible;
       }
 
-      .enquire-form-left,
+      .enquire-form-left {
+        padding: 24px 20px;
+        min-height: 420px;
+      }
+
       .enquire-form-right {
-        padding: 28px 22px;
+        padding: 24px 20px;
+        border-radius: 0 0 20px 20px;
       }
     }
 
@@ -2384,9 +2476,20 @@
         max-width: 50%;
       }
 
+      .who-card {
+        min-height: 180px;
+        padding: 18px 14px;
+      }
+
       .info-tile {
         flex: 0 0 50%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+
+      /* 5th tile alone in last row — span full width */
+      .info-tile:last-child:nth-child(odd) {
+        flex: 0 0 100%;
+        border-right: none !important;
       }
     }
 
@@ -2546,11 +2649,19 @@
             <span class="btn-cta-arrow" aria-hidden="true">&rarr;</span></button>
         </div>
 
-        <!-- Right: Enquire Form -->
+        <!-- Right: Enquire Card -->
         <div class="hero-form-col">
           <div class="enquire-hero-card">
-            <h3 class="enquire-hero-title">ENQUIRE HERE!</h3>
-            <div class="npf_wgts" data-height="500px" data-w="bae1d2d655e51a49493da51c036da124"></div>
+            <h3 class="enquire-hero-title">WHY JOIN THIS PROGRAMME?</h3>
+            <ul class="hero-highlights-list">
+              <li>India's only online M.A. in India Studies from an Indian university</li>
+              <li>Study 100% online — join from anywhere in the world</li>
+              <li>1-Year Postgraduate degree by O.P. Jindal Global University</li>
+              <li>JGU ranked #1 globally in THE Online Learning Rankings 2024</li>
+              <li>Learn from leading scholars across diverse disciplines</li>
+              <li>Join a global cohort with diverse professional backgrounds</li>
+            </ul>
+            <a href="#enquire" class="hero-enquire-btn">Enquire Now &rarr;</a>
           </div>
         </div>
 
@@ -2996,32 +3107,34 @@
               <li>Indian students have the option to pay their tuition fees in multiple installments, as outlined below:
               </li>
             </ul>
-            <table class="fee-table">
-              <thead>
-                <tr>
-                  <th>Fee</th>
-                  <th>Amount</th>
-                  <th>Due Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Registration Amount</td>
-                  <td>INR 25,000</td>
-                  <td>Upon acceptance of Offer Letter</td>
-                </tr>
-                <tr>
-                  <td>Instalment 1</td>
-                  <td>INR 1,25,000</td>
-                  <td>Before Batch Commencement</td>
-                </tr>
-                <tr>
-                  <td>Instalment 2</td>
-                  <td>INR 1,25,000</td>
-                  <td>By 15th Jan 2027</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="fee-table-wrap">
+              <table class="fee-table">
+                <thead>
+                  <tr>
+                    <th>Fee</th>
+                    <th>Amount</th>
+                    <th>Due Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Registration Amount</td>
+                    <td>INR 25,000</td>
+                    <td>Upon acceptance of Offer Letter</td>
+                  </tr>
+                  <tr>
+                    <td>Instalment 1</td>
+                    <td>INR 1,25,000</td>
+                    <td>Before Batch Commencement</td>
+                  </tr>
+                  <tr>
+                    <td>Instalment 2</td>
+                    <td>INR 1,25,000</td>
+                    <td>By 15th Jan 2027</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
