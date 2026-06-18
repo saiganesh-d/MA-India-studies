@@ -2390,6 +2390,20 @@
       }
     }
 
+    @media (max-width: 768px) {
+      .recognitions-header {
+        padding: 32px 20px 24px;
+      }
+
+      .recognitions-body {
+        padding: 28px 0 36px;
+      }
+
+      .owl-carousel.recognitions-badges {
+        padding: 0 16px;
+      }
+    }
+
     @media (max-width: 576px) {
 
       .rec-badge,
@@ -3400,7 +3414,7 @@
         if (current > 0) { current--; updateSlider(); }
       });
 
-      $(window).on('resize', function () { current = 0; updateSlider(); updateFaculty(); updateTest(); updateRecognitions(); });
+      $(window).on('resize', function () { current = 0; tIdx = 0; updateSlider(); updateFaculty(); updateTest(); updateRecognitions(); });
       updateSlider();
       /* Re-run after images load so widths are final */
       $(window).on('load', function () { current = 0; updateSlider(); updateTest(); });
@@ -3414,8 +3428,7 @@
               items: 1,
               margin: 0,
               loop: true,
-              nav: true,
-              navText: ['&#10094;', '&#10095;'],
+              nav: false,
               dots: true,
               autoplay: true,
               autoplayTimeout: 3500,
@@ -3470,20 +3483,31 @@
 
       function updateTest() {
         if (!testGrid || !testCards.length) return;
-        const sliderWrap = document.querySelector('.sc-slider-wrap');
-        if (sliderWrap) {
-          const style = window.getComputedStyle(sliderWrap);
-          const cardWidth = sliderWrap.clientWidth
-            - parseFloat(style.paddingLeft)
-            - parseFloat(style.paddingRight);
-          if (cardWidth > 0) {
-            Array.from(testCards).forEach(function(c) {
-              c.style.flex = '0 0 ' + cardWidth + 'px';
-              c.style.minWidth = cardWidth + 'px';
-              c.style.maxWidth = cardWidth + 'px';
-              c.style.width = cardWidth + 'px';
-            });
+        /* On mobile, set explicit card width = wrapper content area.
+           On desktop, clear JS overrides and let CSS control card widths. */
+        if (window.innerWidth <= 767) {
+          const sliderWrap = document.querySelector('.sc-slider-wrap');
+          if (sliderWrap) {
+            const style = window.getComputedStyle(sliderWrap);
+            const cardWidth = sliderWrap.clientWidth
+              - parseFloat(style.paddingLeft)
+              - parseFloat(style.paddingRight);
+            if (cardWidth > 0) {
+              Array.from(testCards).forEach(function(c) {
+                c.style.flex = '0 0 ' + cardWidth + 'px';
+                c.style.minWidth = cardWidth + 'px';
+                c.style.maxWidth = cardWidth + 'px';
+                c.style.width = cardWidth + 'px';
+              });
+            }
           }
+        } else {
+          Array.from(testCards).forEach(function(c) {
+            c.style.flex = '';
+            c.style.minWidth = '';
+            c.style.maxWidth = '';
+            c.style.width = '';
+          });
         }
         const gap = parseFloat(window.getComputedStyle(testGrid).gap) || 20;
         const w = testCards[0].offsetWidth + gap;
